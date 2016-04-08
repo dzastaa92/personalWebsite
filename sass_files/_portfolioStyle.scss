@@ -1,0 +1,7 @@
+#portfolioSection{
+  .portfolio-container{
+    h2{
+      @include header2();
+    }
+  }
+}

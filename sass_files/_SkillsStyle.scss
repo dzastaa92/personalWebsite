@@ -3,20 +3,13 @@
 
 #skillsSection {
   height: auto;
-  background: $section-background-color;
+  background: $section-background-color-light;
 
   .skills-container-fluid {
     text-align: center;
     background: inherit;
     height: auto;
-
-    @include small{
-      padding: 0 50px;
-    }
-    @include medium{
-      padding: 0;
-    }
-
+    padding: 0 50px;
     h2 {
       @include header2();
     }
@@ -34,7 +27,7 @@
 }
 
 .skills-basic {
-  padding: 20px 0 50px 0;
+  padding-top: 20px;
   .skills {
     padding: 15px 0;
     @include medium {

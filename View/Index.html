@@ -130,7 +130,7 @@
                 <h3>RWD</h3>
                 <p>Dobra znajomość</p>
                 <div class="skills-line">
-                    <div class="skills-line_percentage skills-line__rwd" data-percentage="70%"></div>
+                    <div class="skills-line_percentage skills-line__rwd" data-percentage="60%"></div>
                 </div>
             </div>
 
@@ -138,7 +138,7 @@
                 <h3>Sass</h3>
                 <p>Dobra znajomość</p>
                 <div class="skills-line">
-                    <div class="skills-line_percentage skills-line__sass" data-percentage="70%"></div>
+                    <div class="skills-line_percentage skills-line__sass" data-percentage="65%"></div>
                 </div>
             </div>
 
@@ -200,54 +200,50 @@
 </section>
 
 <section id="portfolioSection">
-    <div class="container-fluid" id="portfolio">
+    <div class="portfolio-container" id="portfolio">
         <h2>Portfolio</h2>
 
-        <p><!--Moje jak na razie skromne portfolio, które na pewno prężnie się rozrośnie w najbliższym czasie--></p>
-        <div class="row myWork">
-            <!--<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">-->
-            <figure class="snip1373">
+        <p>Zrealizowane przeze mnie projekty</p>
+
+        <div class="portfolio-myWork">
+
+            <figure class="portfolio-myWork__element">
                 <img src="../images/wapik.jpg"/>
                 <figcaption>
-                    <h2>Wapik Template</h2>
+                    <h3>Wapik Template</h3>
                     <p>Strona wykonana na podstawie szablonu psd</p>
                 </figcaption>
                 <a href="http://wapik.azurewebsites.net/" target="_blank"></a>
             </figure>
 
-            <figure class="snip1373">
+            <figure class="portfolio-myWork__element">
                 <img src="../images/handmade.JPG"/>
                 <figcaption>
-                    <h2>HandMade Dzasty</h2>
+                    <h3>HandMade Dzasty</h3>
                     <p>Dopasowanie front-endu do internetowego sklepu z ręcznie tworzoną biżuterią </p>
                 </figcaption>
                 <a href="http://handmadedzasty.azurewebsites.net" target="_blank"></a>
             </figure>
-            <!--</div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">-->
 
-            <figure id="hoverFigure" class="snip1373">
+            <figure class="portfolio-myWork__element">
                 <img src="../images/itad.jpg"/>
                 <figcaption>
-                    <h2>ITAD 2015</h2>
+                    <h3>ITAD 2015</h3>
                     <p>Strona internetowa dla konferencji IT Academic Day na Uniwersytecie Ekonomicznym</p>
                 </figcaption>
                 <a href="http://uep.itad.poznan.pl/" target="_blank"></a>
             </figure>
-            <!--</div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">-->
 
-            <figure class="snip1373">
+            <figure class="portfolio-myWork__element">
                 <img src="../images/BackgroundMin.jpg"/>
                 <figcaption>
-                    <h2>Personal Web Page</h2>
+                    <h3>Personal Web Page</h3>
                     <p>Moja wizytówka i portfolio</p>
                 </figcaption>
                 <a href="http://justynawojciechowska.azurewebsites.net/" target="_blank"></a>
             </figure>
         </div>
     </div>
-    <!--</div>-->
 </section>
 
 <section id="contactSection">
@@ -256,37 +252,47 @@
 
         <h2>Kontakt</h2>
 
-
         <div class="row">
             <div class="col-xs-12">
-                <h3 class="presentation">Justyna Wojciechowska</h3>
 
                 <ul class="contactList">
                     <li>
-                        <i class="glyphicon glyphicon-envelope"></i>
-                        <span>justyna_wojciechowska92@vp.pl </span>
+                        <i class="glyphicon glyphicon-phone-alt"></i>
+                        <p>telefon</p>
+                        <hr/>
+                        <p>695946890</p>
                     </li>
                     <li>
-                        <i class="glyphicon glyphicon-phone-alt"></i>
-                        <span>695946890</span>
+                        <i class="glyphicon glyphicon-envelope"></i>
+                        <p>e-mail</p>
+                        <hr/>
+                        <p>justyna_wojciechowska92@vp.pl </p>
                     </li>
                     <li>
                         <i class="glyphicon glyphicon-home"></i>
-                        <span>Poznań</span>
+                        <p>miasto</p>
+                        <hr/>
+                        <p>Poznań</p>
                     </li>
 
                 </ul>
             </div>
 
 
-
         </div>
     </div>
 </section>
 
-<!--<footer>
-    <p>Justyna Wojciechowska</p>
-</footer>-->
+<footer>
+    <div class="footer-container">
+
+        <a href="#home">
+            <i class="glyphicon glyphicon-chevron-up"></i>
+        </a>
+
+        <p>@2016 Justyna Wojciechowska</p>
+    </div>
+</footer>
 
 <script src="../Scripts/jquery-2.1.4.js"></script>
 <script src="../bootstrap/js/bootstrap.js"></script>

@@ -61,34 +61,19 @@
 
 .characterContainer {
   opacity: 0;
-  -moz-transition: all 100ms linear;
-  -webkit-transition: all 100ms linear;
-  -o-transition: all 100ms linear;
-  transition: all 100ms linear;
-  -moz-transform: translate3d(0px, 50px, 0px);
-  -webkit-transform: translate3d(0px, 50px, 0px);
-  -o-transform: translate(0px, 50px);
-  -ms-transform: translate(0px, 50px);
-  transform: translate3d(0px, 50px, 0px);
+  -moz-transition: opacity 1000ms linear;
+  -webkit-transition: opacity 1000ms linear;
+  -o-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear;
 
   @include large {
-    -moz-transition: all 1000ms linear;
-    -webkit-transition: all 1000ms linear;
-    -o-transition: all 1000ms linear;
-    transition: all 1000ms linear;
-    -moz-transform: translate3d(0px, 100px, 0px);
-    -webkit-transform: translate3d(0px, 100px, 0px);
-    -o-transform: translate(0px, 100px);
-    -ms-transform: translate(0px, 100px);
-    transform: translate3d(0px, 100px, 0px);
+    -moz-transition: opacity 1200ms linear;
+    -webkit-transition: opacity 1200ms linear;
+    -o-transition: opacity 1200ms linear;
+    transition: opacity 1200ms linear;
+
   }
 }
-
 .characterContainer.in-view {
   opacity: 1;
-  -moz-transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
 }

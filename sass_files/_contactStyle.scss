@@ -1,0 +1,149 @@
+
+#contactSection {
+  min-height: 80vh;
+  height: auto;
+  background: url('../images/ContactMin.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  z-index: 1;
+
+  @include medium {
+    background: url('../images/Contact.jpg') no-repeat center center fixed;
+  }
+
+  #contact {
+    height: inherit;
+
+    h2 {
+      @include header2();
+    }
+
+    .row {
+      z-index: 1;
+    }
+
+    .contactList {
+      text-align: center;
+      list-style: none;
+      color: black;
+      padding: 20px 0 50px 0  ;
+      margin: 0;
+      @include medium{
+        padding: 50px 0;
+
+      }
+      li {
+        padding-bottom: 20px;
+        @include medium {
+          display: inline-block;
+          width: 30%;
+        }
+        i, p:first-of-type{
+          font-size: 24px;
+          @include medium{
+            font-size: 28px;
+          }
+        }
+        p:first-of-type{
+          padding-top: 10px;
+          font-family: $header-font-family;
+          @include medium{
+            font-weight: 600;
+          }
+        }
+        p:last-of-type{
+          font-size: 14px;
+          @include medium{
+            font-size: 16px;
+          }
+        }
+        hr{
+          width: 20%;
+          background-color: $main-color;
+          border-top-color: $main-color;
+          height: 1px;
+          @include medium{
+
+            width: 50%;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+footer {
+  height: 20vh;
+  background-color: $section-background-color-dark;
+  position: relative;
+  .footer-container {
+    text-align: center;
+    color: white;
+    font-family: $header-font-family;
+    font-size: 20px;
+    padding-top: 20px;
+    a{
+      position: absolute;
+      top: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      width: 40px;
+      height: 40px;
+      border: 2px solid transparent;
+      border-radius: 20px;
+      i{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left:50%;
+        top:50%;
+        color: $main-color;
+      }
+    }
+    a:hover{
+      i{
+        font-size: 24px;
+      }
+    }
+    p{
+      padding-top: 50px;
+    }
+  }
+}
+
+
+.contactList {
+  opacity: 0;
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
+  -moz-transform: translate3d(0px, 50px, 0px);
+  -webkit-transform: translate3d(0px, 50px, 0px);
+  -o-transform: translate(0px, 50px);
+  -ms-transform: translate(0px, 50px);
+  transform: translate3d(0px, 50px, 0px);
+
+  @include large {
+    -moz-transition: all 1000ms linear;
+    -webkit-transition: all 1000ms linear;
+    -o-transition: all 1000ms linear;
+    transition: all 1000ms linear;
+    -moz-transform: translate3d(0px, 100px, 0px);
+    -webkit-transform: translate3d(0px, 100px, 0px);
+    -o-transform: translate(0px, 100px);
+    -ms-transform: translate(0px, 100px);
+    transform: translate3d(0px, 100px, 0px);
+  }
+}
+
+.contactList.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}

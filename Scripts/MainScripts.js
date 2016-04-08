@@ -13,7 +13,9 @@
     });
 
 
-    var animation_elements = $('.characterContainer, .skills-line_percentage');
+
+
+    var animation_elements = $('.characterContainer, .skills-line_percentage, .contactList');
     var web_window = $(window);
 
     //check to see if any animation containers are currently in view
