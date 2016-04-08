@@ -184,6 +184,8 @@ section {
       transition: 0.4s all linear;
       color: #11a99d !important;
       background-color: transparent; }
+    #hide-navbar ul li a:active {
+      color: #11a99d !important; }
 
 /**Google fonts**/
 /**Google fonts**/
@@ -634,7 +636,7 @@ section {
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 10px 1%;
+  margin: 10px 2%;
   min-width: 230px;
   max-width: 315px;
   width: 100%;
@@ -685,16 +687,14 @@ section {
   right: 0; }
 
 .portfolio-myWork__element:hover img,
-.portfolio-myWork__element.hover img,
-.portfolio_smallScreen {
+.portfolio-myWork__element.hover img {
   zoom: 1;
   filter: alpha(opacity=30);
   -webkit-opacity: 0.3;
   opacity: 0.3; }
 
 .portfolio-myWork__element:hover figcaption,
-.portfolio-myWork__element.hover figcaption,
-.portfolio_smallScreen {
+.portfolio-myWork__element.hover figcaption {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1; }
@@ -771,7 +771,7 @@ section {
             display: inline-block;
             width: 30%; } }
         #contactSection #contact .contactList li i, #contactSection #contact .contactList li p:first-of-type {
-          font-size: 24px; }
+          font-size: 26px; }
           @media screen and (min-width: 768px) {
             #contactSection #contact .contactList li i, #contactSection #contact .contactList li p:first-of-type {
               font-size: 28px; } }
@@ -782,10 +782,7 @@ section {
             #contactSection #contact .contactList li p:first-of-type {
               font-weight: 600; } }
         #contactSection #contact .contactList li p:last-of-type {
-          font-size: 14px; }
-          @media screen and (min-width: 768px) {
-            #contactSection #contact .contactList li p:last-of-type {
-              font-size: 16px; } }
+          font-size: 16px; }
         #contactSection #contact .contactList li hr {
           width: 20%;
           background-color: #11a99d;

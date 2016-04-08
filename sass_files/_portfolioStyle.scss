@@ -31,7 +31,7 @@
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 10px 1%;
+  margin: 10px 2%;
   min-width: 230px;
   max-width: 315px;
   width: 100%;
@@ -89,8 +89,7 @@
 }
 
 .portfolio-myWork__element:hover img,
-.portfolio-myWork__element.hover img,
-.portfolio_smallScreen {
+.portfolio-myWork__element.hover img{
   zoom: 1;
   filter: alpha(opacity=30);
   -webkit-opacity: 0.3;
@@ -98,8 +97,8 @@
 }
 
 .portfolio-myWork__element:hover figcaption,
-.portfolio-myWork__element.hover figcaption,
-.portfolio_smallScreen {
+.portfolio-myWork__element.hover figcaption
+ {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;

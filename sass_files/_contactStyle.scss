@@ -41,7 +41,7 @@
         }
 
         i, p:first-of-type{
-          font-size: 24px;
+          font-size: 26px;
           @include medium{
             font-size: 28px;
           }
@@ -54,10 +54,8 @@
           }
         }
         p:last-of-type{
-          font-size: 14px;
-          @include medium{
             font-size: 16px;
-          }
+
         }
         hr{
           width: 20%;

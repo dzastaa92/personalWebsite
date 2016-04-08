@@ -143,6 +143,9 @@
                 color: $navbar-font-hover-color !important;
                 background-color: $navbar-background-color;
             }
+            a:active {
+                color: $main-color !important;
+            }
         }
     }
 }
