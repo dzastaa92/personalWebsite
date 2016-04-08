@@ -1,0 +1,13 @@
+
+@import "variables";
+@import "mixin";
+body{
+  overflow-x: hidden;
+  font-family: $content-font-family
+}
+
+
+@import "NavbarStyle";
+@import "HomeStyle";
+@import "AboutMeStyle";
+@import "SkillsStyle";

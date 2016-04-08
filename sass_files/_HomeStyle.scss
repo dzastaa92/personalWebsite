@@ -1,0 +1,101 @@
+@import '_variables.scss';
+@import '_mixin.scss';
+
+#homeSection {
+  height: auto;
+  min-height: 100vh;
+  background: url('../images/BackgroundLittleSmaller.jpg') no-repeat center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1;
+
+  @include medium {
+    background: url('../images/Background.jpg') no-repeat center fixed;
+  }
+}
+
+#home {
+  height: inherit;
+  padding: 100px 0 0 0;
+  margin: 0px;
+  position: relative;
+  z-index: 999;
+  text-align: center;
+
+  @include small {
+    padding-top: 150px;
+  }
+  @include medium {
+    padding-top: 150px;
+    letter-spacing: 0.3em;
+  }
+  @include large {
+    padding-top: 200px;
+    letter-spacing: 0.3em;
+  }
+
+  * {
+    display: none;
+  }
+
+  h1 {
+    color: #5f5f5f;
+    font-family: $header-font-family;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+
+    @include small {
+      font-size: 40px;
+    }
+    @include medium {
+      font-size: 50px;
+      letter-spacing: 0.3em;
+    }
+    @include xlarge {
+      font-size: 60px;
+    }
+
+  }
+
+  hr#nameHr {
+    background-color: $navbar-font-hover-color;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 3px;
+    border-top-color: $navbar-font-hover-color;
+
+    @include small {
+      width: 250px;
+    }
+
+    @include large {
+      width: 320px;
+    }
+  }
+
+  p {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    font-family: $header-font-family;
+    @include medium {
+      font-size: 25px;
+    }
+    @include xlarge {
+      font-size: 30px;
+    }
+
+  }
+}
+
+#skills {
+  height: 100vh;
+  background-color: white;
+  z-index: 9999;
+}
+
+

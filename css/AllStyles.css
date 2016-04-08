@@ -1,0 +1,424 @@
+/**Google fonts**/
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+/**Google fonts**/
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif; }
+
+/**Google fonts**/
+/**Google fonts**/
+@media screen and (min-width: 1200px) {
+  #navigation {
+    height: 50px; } }
+
+@media screen and (min-width: 992px) {
+  #navigation {
+    height: 50px; } }
+
+@media screen and (min-width: 768px) {
+  #navigation {
+    height: 50px; } }
+
+@media screen and (min-width: 768px) {
+  .navigation-div-background {
+    background-color: #e7e9ee;
+    -webkit-box-shadow: 0 4px 5px #777777;
+    -moz-box-shadow: 0 4px 5px #777777;
+    box-shadow: 0 4px 5px #777777; } }
+
+.background-collapse {
+  background-color: #e7e9ee; }
+
+.navbar-toggle .icon-bar {
+  transition: 300ms ease-in-out;
+  background-color: #000;
+  position: relative;
+  width: 24px;
+  height: 3px; }
+
+.navbar-toggle .icon-bar:nth-child(1) {
+  opacity: 0; }
+
+.navbar-toggle .icon-bar:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px; }
+
+.navbar-toggle .icon-bar:nth-child(3) {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: -7px; }
+
+.navbar-toggle.collapsed .icon-bar {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  top: 0;
+  opacity: 1; }
+
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  z-index: 9999; }
+
+.navbar-header a.navbar-brand {
+  color: #000000; }
+
+.navbar-header a.navbar-brand:hover {
+  color: #11a99d; }
+
+@media screen and (min-width: 768px) {
+  #hide-navbar {
+    margin-top: 10px; } }
+
+#hide-navbar ul {
+  text-align: center;
+  padding: 0px;
+  list-style: none; }
+  #hide-navbar ul li {
+    text-align: right;
+    text-decoration: none; }
+    @media screen and (min-width: 768px) {
+      #hide-navbar ul li {
+        margin-right: 10px;
+        margin-left: 10px;
+        display: inline-block; } }
+    @media screen and (min-width: 992px) {
+      #hide-navbar ul li {
+        margin-right: 15px;
+        margin-left: 15px; } }
+    #hide-navbar ul li a {
+      font-size: 26px;
+      text-decoration: none;
+      color: #000000 !important;
+      font-family: "Josefin Sans", Arial, sans-serif; }
+      @media screen and (min-width: 481px) {
+        #hide-navbar ul li a {
+          font-size: 28px; } }
+      @media screen and (min-width: 768px) {
+        #hide-navbar ul li a {
+          font-size: 30px; } }
+      @media screen and (min-width: 992px) {
+        #hide-navbar ul li a {
+          font-size: 32px; } }
+    #hide-navbar ul li a:hover {
+      text-decoration: none;
+      transition: 0.4s all linear;
+      color: #11a99d !important;
+      background-color: transparent; }
+    #hide-navbar ul li a.activate {
+      text-decoration: none;
+      transition: 0.4s all linear;
+      color: #11a99d !important;
+      background-color: transparent; }
+
+/**Google fonts**/
+/**Google fonts**/
+#homeSection {
+  height: auto;
+  min-height: 100vh;
+  background: url("../images/BackgroundLittleSmaller.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1; }
+  @media screen and (min-width: 768px) {
+    #homeSection {
+      background: url("../images/Background.jpg") no-repeat center fixed; } }
+
+#home {
+  height: inherit;
+  padding: 100px 0 0 0;
+  margin: 0px;
+  position: relative;
+  z-index: 999;
+  text-align: center; }
+  @media screen and (min-width: 481px) {
+    #home {
+      padding-top: 150px; } }
+  @media screen and (min-width: 768px) {
+    #home {
+      padding-top: 150px;
+      letter-spacing: 0.3em; } }
+  @media screen and (min-width: 992px) {
+    #home {
+      padding-top: 200px;
+      letter-spacing: 0.3em; } }
+  #home * {
+    display: none; }
+  #home h1 {
+    color: #5f5f5f;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px; }
+    @media screen and (min-width: 481px) {
+      #home h1 {
+        font-size: 40px; } }
+    @media screen and (min-width: 768px) {
+      #home h1 {
+        font-size: 50px;
+        letter-spacing: 0.3em; } }
+    @media screen and (min-width: 1200px) {
+      #home h1 {
+        font-size: 60px; } }
+  #home hr#nameHr {
+    background-color: #11a99d;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 3px;
+    border-top-color: #11a99d; }
+    @media screen and (min-width: 481px) {
+      #home hr#nameHr {
+        width: 250px; } }
+    @media screen and (min-width: 992px) {
+      #home hr#nameHr {
+        width: 320px; } }
+  #home p {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    font-family: "Josefin Sans", Arial, sans-serif; }
+    @media screen and (min-width: 768px) {
+      #home p {
+        font-size: 25px; } }
+    @media screen and (min-width: 1200px) {
+      #home p {
+        font-size: 30px; } }
+
+#skills {
+  height: 100vh;
+  background-color: white;
+  z-index: 9999; }
+
+/**Google fonts**/
+/**Google fonts**/
+#aboutMeSection {
+  height: auto; }
+
+#aboutMe {
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    #aboutMe {
+      margin-bottom: 30px; } }
+  @media screen and (min-width: 992px) {
+    #aboutMe {
+      margin-bottom: 100px; } }
+  #aboutMe h2 {
+    font-family: "Josefin Sans", Arial, sans-serif;
+    /*font-weight: 600;*/
+    color: #11a99d;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 1px;
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 50px; }
+    @media screen and (min-width: 481px) {
+      #aboutMe h2 {
+        font-size: 35px;
+        line-height: 45px; } }
+    @media screen and (min-width: 768px) {
+      #aboutMe h2 {
+        font-size: 40px;
+        line-height: 50px; } }
+    @media screen and (min-width: 992px) {
+      #aboutMe h2 {
+        font-size: 45px;
+        line-height: 60px; } }
+    @media screen and (min-width: 1200px) {
+      #aboutMe h2 {
+        font-size: 50px; } }
+  #aboutMe .row {
+    margin-top: 10px;
+    text-align: center; }
+    @media screen and (min-width: 481px) {
+      #aboutMe .row {
+        margin-top: 10px; } }
+    @media screen and (min-width: 768px) {
+      #aboutMe .row {
+        margin-top: 50px; } }
+    #aboutMe .row .characterContainer {
+      margin-top: 10px; }
+      @media screen and (min-width: 992px) {
+        #aboutMe .row .characterContainer {
+          margin-top: 30px; } }
+      #aboutMe .row .characterContainer i {
+        font-size: 35px; }
+      #aboutMe .row .characterContainer hr {
+        width: 50%;
+        background-color: #11a99d;
+        border-top-color: #11a99d;
+        height: 1px; }
+      #aboutMe .row .characterContainer p {
+        font-size: 18px;
+        font-family: "Open Sans", sans-serif; }
+        @media screen and (min-width: 768px) {
+          #aboutMe .row .characterContainer p {
+            font-size: 22px; } }
+        @media screen and (min-width: 992px) {
+          #aboutMe .row .characterContainer p {
+            font-size: 24px; } }
+
+.characterContainer {
+  opacity: 0;
+  -moz-transition: all 1000ms linear;
+  -webkit-transition: all 1000ms linear;
+  -o-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+  -moz-transform: translate3d(0px, 50px, 0px);
+  -webkit-transform: translate3d(0px, 50px, 0px);
+  -o-transform: translate(0px, 50px);
+  -ms-transform: translate(0px, 50px);
+  transform: translate3d(0px, 50px, 0px); }
+  @media screen and (min-width: 992px) {
+    .characterContainer {
+      -moz-transform: translate3d(0px, 100px, 0px);
+      -webkit-transform: translate3d(0px, 100px, 0px);
+      -o-transform: translate(0px, 100px);
+      -ms-transform: translate(0px, 100px);
+      transform: translate3d(0px, 100px, 0px); } }
+
+.characterContainer.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px); }
+
+/**Google fonts**/
+/**Google fonts**/
+#skillsSection {
+  min-height: 100vh !important;
+  height: auto !important;
+  background: #e7e9ee; }
+  #skillsSection #skills {
+    text-align: center;
+    background: inherit;
+    height: auto !important; }
+    #skillsSection #skills h2 {
+      font-family: "Josefin Sans", Arial, sans-serif;
+      /*font-weight: 600;*/
+      color: #11a99d;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      text-align: center;
+      margin-bottom: 1px;
+      font-size: 30px;
+      line-height: 40px;
+      padding-top: 50px; }
+      @media screen and (min-width: 481px) {
+        #skillsSection #skills h2 {
+          font-size: 35px;
+          line-height: 45px; } }
+      @media screen and (min-width: 768px) {
+        #skillsSection #skills h2 {
+          font-size: 40px;
+          line-height: 50px; } }
+      @media screen and (min-width: 992px) {
+        #skillsSection #skills h2 {
+          font-size: 45px;
+          line-height: 60px; } }
+      @media screen and (min-width: 1200px) {
+        #skillsSection #skills h2 {
+          font-size: 50px; } }
+    #skillsSection #skills .row {
+      text-align: center; }
+
+.skills-line {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  position: relative; }
+
+.skills-line_percentage {
+  position: absolute;
+  height: 5px; }
+
+.skills-line_percentage.skills-line__html {
+  background-color: #d56b49; }
+
+.skills-line_percentage.skills-line__css {
+  background-color: #7cb1f4; }
+
+.skills-line_percentage.skills-line__jquery {
+  background-color: rgba(0, 26, 165, 0.65); }
+
+.skills-line_percentage.skills-line__javascript {
+  background-color: rgba(212, 212, 0, 0.46); }
+
+.skills-line_percentage.skills-line__rwd {
+  background-color: #54ae94; }
+
+.skills-line_percentage.skills-line__sass {
+  background-color: #CC6698; }
+
+.skills-line_percentage.skills-line__bootstrap {
+  background-color: rgba(86, 59, 126, 0.71); }
+
+.skills-line_percentage.skills-line__photoshop {
+  background-color: #7eccc6; }
+
+.skills-line_percentage.skills-line__sass {
+  background-color: #CC6698; }

@@ -1,0 +1,88 @@
+@import '_variables.scss';
+@import '_mixin.scss';
+
+#aboutMeSection {
+  height: auto;
+}
+
+#aboutMe {
+
+  margin-bottom: 20px;
+  @include medium {
+    margin-bottom: 30px;
+  }
+
+  @include large {
+    margin-bottom: 100px;
+  }
+
+  h2 {
+    @include header2();
+  }
+
+  .row {
+    @include rowMargins();
+    text-align: center;
+
+    .characterContainer {
+      margin-top: 10px;
+
+      @include large {
+        margin-top: 30px;
+      }
+
+      i {
+        font-size: 35px;
+      }
+
+      hr {
+        width: 50%;
+        background-color: $main-color;
+        border-top-color: $main-color;
+        height: 1px;
+      }
+
+      p {
+        font-size: 18px;
+        font-family: $content-font-family;
+        @include medium {
+          font-size: 22px;
+        }
+
+        @include large {
+          font-size: 24px;
+        }
+
+      }
+    }
+  }
+}
+
+.characterContainer {
+  opacity: 0;
+  -moz-transition: all 1000ms linear;
+  -webkit-transition: all 1000ms linear;
+  -o-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+  -moz-transform: translate3d(0px, 50px, 0px);
+  -webkit-transform: translate3d(0px, 50px, 0px);
+  -o-transform: translate(0px, 50px);
+  -ms-transform: translate(0px, 50px);
+  transform: translate3d(0px, 50px, 0px);
+  @include large {
+    -moz-transform: translate3d(0px, 100px, 0px);
+    -webkit-transform: translate3d(0px, 100px, 0px);
+    -o-transform: translate(0px, 100px);
+    -ms-transform: translate(0px, 100px);
+    transform: translate3d(0px, 100px, 0px);
+  }
+}
+
+.characterContainer.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
