@@ -1,0 +1,23 @@
+
+body{
+  overflow-x: hidden;
+  font-family: $content-font-family
+}
+section{
+  padding: 0 10px;
+  @include small{
+    padding: 0 50px;
+  }
+  @include medium {
+    padding: 0 20px;
+  }
+  @include large {
+    padding: 0 80px;
+  }
+  @include xlarge {
+    padding: 0 120px;
+  }
+  @include xxlarge {
+    padding: 0 200px;
+  }
+}

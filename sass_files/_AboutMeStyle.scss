@@ -3,6 +3,7 @@
 
 #aboutMeSection {
   height: auto;
+  padding: 0;
 }
 
 #aboutMe {
@@ -60,16 +61,21 @@
 
 .characterContainer {
   opacity: 0;
-  -moz-transition: all 1000ms linear;
-  -webkit-transition: all 1000ms linear;
-  -o-transition: all 1000ms linear;
-  transition: all 1000ms linear;
+  -moz-transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+  transition: all 100ms linear;
   -moz-transform: translate3d(0px, 50px, 0px);
   -webkit-transform: translate3d(0px, 50px, 0px);
   -o-transform: translate(0px, 50px);
   -ms-transform: translate(0px, 50px);
   transform: translate3d(0px, 50px, 0px);
+
   @include large {
+    -moz-transition: all 1000ms linear;
+    -webkit-transition: all 1000ms linear;
+    -o-transition: all 1000ms linear;
+    transition: all 1000ms linear;
     -moz-transform: translate3d(0px, 100px, 0px);
     -webkit-transform: translate3d(0px, 100px, 0px);
     -o-transform: translate(0px, 100px);

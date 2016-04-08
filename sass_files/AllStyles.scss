@@ -1,13 +1,10 @@
 
 @import "variables";
 @import "mixin";
-body{
-  overflow-x: hidden;
-  font-family: $content-font-family
-}
 
-
+@import "AllSectionStyles";
 @import "NavbarStyle";
 @import "HomeStyle";
 @import "AboutMeStyle";
 @import "SkillsStyle";
+@import "gitStyle";

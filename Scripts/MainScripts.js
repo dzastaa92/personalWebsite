@@ -53,14 +53,14 @@
 
 
 
-
+    $(window).resize(function () {
+    });
 
 
     $(window).scroll(function () {
         check_if_in_view();
-       // animate_skills_width();
     });
-    //trigger our scroll event on initial load
+
     $(window).trigger('scroll');
 
 

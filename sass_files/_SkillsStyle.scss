@@ -2,14 +2,20 @@
 @import '_mixin.scss';
 
 #skillsSection {
-  min-height: 100vh !important;
-  height: auto !important;
+  height: auto;
   background: $section-background-color;
 
-  #skills {
+  .skills-container-fluid {
     text-align: center;
     background: inherit;
-    height: auto !important;
+    height: auto;
+
+    @include small{
+      padding: 0 50px;
+    }
+    @include medium{
+      padding: 0;
+    }
 
     h2 {
       @include header2();
@@ -21,7 +27,20 @@
 }
 
 .skills {
+  margin: 15px 0;
+  @include medium {
+    margin: 30px 0;
+  }
+}
 
+.skills-basic {
+  padding: 20px 0 50px 0;
+  .skills {
+    padding: 15px 0;
+    @include medium {
+      padding: 20px 0;
+    }
+  }
 }
 
 .skills-line {
@@ -29,6 +48,7 @@
   height: 5px;
   background-color: white;
   position: relative;
+
 }
 
 .skills-line_percentage {
@@ -59,12 +79,15 @@
 .skills-line_percentage.skills-line__sass {
   background-color: #CC6698;
 }
-  .skills-line_percentage.skills-line__bootstrap {
-    background-color: rgba(86, 59, 126, 0.71);
-  }
-  .skills-line_percentage.skills-line__photoshop {
-    background-color: #7eccc6;
-  }
-  .skills-line_percentage.skills-line__sass {
-    background-color: #CC6698;
-  }
+
+.skills-line_percentage.skills-line__bootstrap {
+  background-color: rgba(86, 59, 126, 0.71);
+}
+
+.skills-line_percentage.skills-line__photoshop {
+  background-color: #7eccc6;
+}
+
+.skills-line_percentage.skills-line__sass {
+  background-color: #CC6698;
+}
