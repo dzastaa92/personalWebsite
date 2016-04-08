@@ -1,7 +1,27 @@
-#portfolioSection{
-  .portfolio-container{
-    h2{
+#portfolioSection {
+  background-color: $section-background-color-light;
+
+  .portfolio-container {
+    h2 {
       @include header2();
+      margin: 0;
+    }
+  }
+  p:first-of-type {
+    text-align: center;
+  }
+  .portfolio-myWork {
+    @include medium {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    img {
+      width: 50%;
+      height: 50%;
     }
   }
 }

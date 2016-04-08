@@ -39,6 +39,7 @@
           display: inline-block;
           width: 30%;
         }
+
         i, p:first-of-type{
           font-size: 24px;
           @include medium{
@@ -92,7 +93,6 @@ footer {
       background-color: white;
       width: 40px;
       height: 40px;
-      border: 2px solid transparent;
       border-radius: 20px;
       i{
         position: absolute;

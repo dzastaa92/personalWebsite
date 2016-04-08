@@ -88,7 +88,7 @@ section {
 
 @media screen and (min-width: 768px) {
   .navigation-div-background {
-    background-color: #e7e9ee;
+    background-color: #eff1f6;
     -webkit-box-shadow: 0 4px 5px #777777;
     -moz-box-shadow: 0 4px 5px #777777;
     box-shadow: 0 4px 5px #777777; } }
@@ -190,6 +190,18 @@ section {
 #homeSection {
   height: auto;
   min-height: 100vh;
+  position: relative; }
+
+#homeSection:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: -1;
   background: url("../images/BackgroundLittleSmaller.jpg") no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -197,7 +209,7 @@ section {
   background-size: cover;
   z-index: 1; }
   @media screen and (min-width: 768px) {
-    #homeSection {
+    #homeSection:after {
       background: url("../images/Background.jpg") no-repeat center fixed; } }
 
 #home {
@@ -282,7 +294,7 @@ section {
       margin-bottom: 100px; } }
   #aboutMe h2 {
     font-family: "Josefin Sans", Arial, sans-serif;
-    padding-top: 60px;
+    padding-top: 80px;
     /*font-weight: 600;*/
     color: #11a99d;
     position: relative;
@@ -359,7 +371,7 @@ section {
 /**Google fonts**/
 #skillsSection {
   height: auto;
-  background: #e7e9ee; }
+  background: #eff1f6; }
   #skillsSection .skills-container-fluid {
     text-align: center;
     background: inherit;
@@ -367,7 +379,7 @@ section {
     padding: 0 50px; }
     #skillsSection .skills-container-fluid h2 {
       font-family: "Josefin Sans", Arial, sans-serif;
-      padding-top: 60px;
+      padding-top: 80px;
       /*font-weight: 600;*/
       color: #11a99d;
       position: relative;
@@ -393,6 +405,8 @@ section {
       @media screen and (min-width: 1200px) {
         #skillsSection .skills-container-fluid h2 {
           font-size: 50px; } }
+    #skillsSection .skills-container-fluid p {
+      font-size: 16px; }
     #skillsSection .skills-container-fluid .row {
       text-align: center; }
 
@@ -521,34 +535,83 @@ section {
     color: black;
     text-decoration: none; }
 
-#portfolioSection .portfolio-container h2 {
-  font-family: "Josefin Sans", Arial, sans-serif;
-  padding-top: 60px;
-  /*font-weight: 600;*/
-  color: #11a99d;
-  position: relative;
+#developmentSection {
+  height: auto;
   z-index: 1;
-  overflow: hidden;
-  text-align: center;
-  margin-bottom: 1px;
-  font-size: 30px;
-  line-height: 40px;
-  padding-bottom: 30px; }
-  @media screen and (min-width: 481px) {
-    #portfolioSection .portfolio-container h2 {
-      font-size: 35px;
-      line-height: 45px; } }
+  position: relative; }
+
+#developmentSection:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+  background: url("../images/computer.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   @media screen and (min-width: 768px) {
-    #portfolioSection .portfolio-container h2 {
-      font-size: 40px;
-      line-height: 50px; } }
-  @media screen and (min-width: 992px) {
-    #portfolioSection .portfolio-container h2 {
-      font-size: 45px;
-      line-height: 60px; } }
-  @media screen and (min-width: 1200px) {
-    #portfolioSection .portfolio-container h2 {
-      font-size: 50px; } }
+    #developmentSection:after {
+      background: url("../images/computer.jpg") no-repeat center fixed; } }
+
+.development-container {
+  padding: 100px 0;
+  text-align: center; }
+  .development-container h3 {
+    margin: 0;
+    font-size: 28px;
+    padding-bottom: 20px; }
+  .development-container p {
+    font-size: 18px; }
+
+#portfolioSection {
+  background-color: #eff1f6; }
+  #portfolioSection .portfolio-container h2 {
+    font-family: "Josefin Sans", Arial, sans-serif;
+    padding-top: 80px;
+    /*font-weight: 600;*/
+    color: #11a99d;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 1px;
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 30px;
+    margin: 0; }
+    @media screen and (min-width: 481px) {
+      #portfolioSection .portfolio-container h2 {
+        font-size: 35px;
+        line-height: 45px; } }
+    @media screen and (min-width: 768px) {
+      #portfolioSection .portfolio-container h2 {
+        font-size: 40px;
+        line-height: 50px; } }
+    @media screen and (min-width: 992px) {
+      #portfolioSection .portfolio-container h2 {
+        font-size: 45px;
+        line-height: 60px; } }
+    @media screen and (min-width: 1200px) {
+      #portfolioSection .portfolio-container h2 {
+        font-size: 50px; } }
+  #portfolioSection p:first-of-type {
+    text-align: center; }
+  @media screen and (min-width: 768px) {
+    #portfolioSection .portfolio-myWork {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center; } }
+  #portfolioSection .portfolio-myWork img {
+    width: 50%;
+    height: 50%; }
 
 #contactSection {
   min-height: 80vh;
@@ -565,7 +628,7 @@ section {
     height: inherit; }
     #contactSection #contact h2 {
       font-family: "Josefin Sans", Arial, sans-serif;
-      padding-top: 60px;
+      padding-top: 80px;
       /*font-weight: 600;*/
       color: #11a99d;
       position: relative;
@@ -651,7 +714,6 @@ footer {
       background-color: white;
       width: 40px;
       height: 40px;
-      border: 2px solid transparent;
       border-radius: 20px; }
       footer .footer-container a i {
         position: absolute;
