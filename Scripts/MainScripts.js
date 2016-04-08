@@ -13,10 +13,15 @@
     });
 
 
-
-
     var animation_elements = $('.characterContainer, .skills-line_percentage, .contactList');
     var web_window = $(window);
+
+    if(web_window.width() < 768 ){
+        $('.portfolio-myWork__element').addClass('portfolio_smallScreen');
+    }else{
+        $('.portfolio-myWork__element').removeClass('portfolio_smallScreen');
+
+    }
 
     //check to see if any animation containers are currently in view
     function check_if_in_view() {

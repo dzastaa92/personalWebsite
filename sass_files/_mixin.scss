@@ -11,16 +11,14 @@
   text-align: center;
   margin-bottom: 1px;
 
-  font-size: 30px;
+  font-size: 40px;
   line-height: 40px;
   padding-bottom: 30px;
   @include small {
-    font-size: 35px;
     line-height: 45px;
   }
 
   @include medium {
-    font-size: 40px;
     line-height: 50px;
   }
   @include large {

@@ -302,16 +302,14 @@ section {
     overflow: hidden;
     text-align: center;
     margin-bottom: 1px;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 40px;
     padding-bottom: 30px; }
     @media screen and (min-width: 481px) {
       #aboutMe h2 {
-        font-size: 35px;
         line-height: 45px; } }
     @media screen and (min-width: 768px) {
       #aboutMe h2 {
-        font-size: 40px;
         line-height: 50px; } }
     @media screen and (min-width: 992px) {
       #aboutMe h2 {
@@ -387,16 +385,14 @@ section {
       overflow: hidden;
       text-align: center;
       margin-bottom: 1px;
-      font-size: 30px;
+      font-size: 40px;
       line-height: 40px;
       padding-bottom: 30px; }
       @media screen and (min-width: 481px) {
         #skillsSection .skills-container-fluid h2 {
-          font-size: 35px;
           line-height: 45px; } }
       @media screen and (min-width: 768px) {
         #skillsSection .skills-container-fluid h2 {
-          font-size: 40px;
           line-height: 50px; } }
       @media screen and (min-width: 992px) {
         #skillsSection .skills-container-fluid h2 {
@@ -561,7 +557,12 @@ section {
 
 .development-container {
   padding: 100px 0;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .development-container {
+      text-align: left;
+      padding-left: 200px; } }
   .development-container h3 {
     margin: 0;
     font-size: 28px;
@@ -569,8 +570,28 @@ section {
   .development-container p {
     font-size: 18px; }
 
+.development-container-images > img {
+  width: 80px;
+  height: 80px; }
+
+@media screen and (min-width: 768px) {
+  .development-container-images {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); } }
+
 #portfolioSection {
-  background-color: #eff1f6; }
+  background-color: #eff1f6;
+  min-height: 150vh;
+  height: auto; }
+  @media screen and (min-width: 768px) {
+    #portfolioSection {
+      min-height: 80vh; } }
   #portfolioSection .portfolio-container h2 {
     font-family: "Josefin Sans", Arial, sans-serif;
     padding-top: 80px;
@@ -581,17 +602,15 @@ section {
     overflow: hidden;
     text-align: center;
     margin-bottom: 1px;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 40px;
     padding-bottom: 30px;
     margin: 0; }
     @media screen and (min-width: 481px) {
       #portfolioSection .portfolio-container h2 {
-        font-size: 35px;
         line-height: 45px; } }
     @media screen and (min-width: 768px) {
       #portfolioSection .portfolio-container h2 {
-        font-size: 40px;
         line-height: 50px; } }
     @media screen and (min-width: 992px) {
       #portfolioSection .portfolio-container h2 {
@@ -602,16 +621,98 @@ section {
         font-size: 50px; } }
   #portfolioSection p:first-of-type {
     text-align: center; }
-  @media screen and (min-width: 768px) {
-    #portfolioSection .portfolio-myWork {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      align-content: center; } }
-  #portfolioSection .portfolio-myWork img {
-    width: 50%;
-    height: 50%; }
+
+.portfolio-myWork {
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+.portfolio-myWork__element {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  background-color: #626269;
+  line-height: 1.5em; }
+
+.portfolio-myWork__element *,
+.portfolio-myWork__element *:before,
+.portfolio-myWork__element *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear; }
+
+.portfolio-myWork__element img {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  vertical-align: top; }
+
+.portfolio-myWork__element figcaption {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-25%);
+  transform: translateY(-25%);
+  padding: 5px 40px;
+  opacity: 0; }
+
+.portfolio-myWork__element h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.portfolio-myWork__element p {
+  font-weight: 400;
+  margin: 0;
+  font-size: 0.9em; }
+
+.portfolio-myWork__element a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.portfolio-myWork__element:hover img,
+.portfolio-myWork__element.hover img,
+.portfolio_smallScreen {
+  zoom: 1;
+  filter: alpha(opacity=30);
+  -webkit-opacity: 0.3;
+  opacity: 0.3; }
+
+.portfolio-myWork__element:hover figcaption,
+.portfolio-myWork__element.hover figcaption,
+.portfolio_smallScreen {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1; }
+
+.portfolio-myWork__element i {
+  width: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: auto;
+  z-index: 1;
+  background-color: #626269;
+  color: #eff1f6; }
+
+.portfolio-separator {
+  height: 10px; }
 
 #contactSection {
   min-height: 80vh;
@@ -636,16 +737,14 @@ section {
       overflow: hidden;
       text-align: center;
       margin-bottom: 1px;
-      font-size: 30px;
+      font-size: 40px;
       line-height: 40px;
       padding-bottom: 30px; }
       @media screen and (min-width: 481px) {
         #contactSection #contact h2 {
-          font-size: 35px;
           line-height: 45px; } }
       @media screen and (min-width: 768px) {
         #contactSection #contact h2 {
-          font-size: 40px;
           line-height: 50px; } }
       @media screen and (min-width: 992px) {
         #contactSection #contact h2 {
