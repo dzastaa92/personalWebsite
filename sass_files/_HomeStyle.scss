@@ -31,21 +31,13 @@
 
 #home {
   height: inherit;
-  padding: 100px 0 0 0;
+  padding: 25vh 0 0 0;
   margin: 0px;
   position: relative;
   z-index: 999;
   text-align: center;
 
-  @include small {
-    padding-top: 150px;
-  }
   @include medium {
-    padding-top: 150px;
-    letter-spacing: 0.3em;
-  }
-  @include large {
-    padding-top: 200px;
     letter-spacing: 0.3em;
   }
 
@@ -59,7 +51,6 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 30px;
-
     @include small {
       font-size: 40px;
     }
@@ -76,13 +67,15 @@
   hr#nameHr {
     background-color: $navbar-font-hover-color;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 200px;
     height: 3px;
     border-top-color: $navbar-font-hover-color;
 
     @include small {
       width: 250px;
+      margin-bottom: 20px;
+
     }
 
     @include large {
@@ -103,6 +96,8 @@
     }
 
   }
+
+
 }
 
 #skills {

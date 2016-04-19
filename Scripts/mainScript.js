@@ -1,6 +1,8 @@
-﻿$(document).ready(function () {
+﻿
+$(document).ready(function () {
+
     $('section').first().addClass('active');
-    $("#name, #nameHr, #nameIntro").fadeIn(2200);
+    $("#name, #nameHr, #nameIntro").fadeIn( 2000);
     $('#nav').css({"margin-top": '-90px', opacity: 0}).animate({"margin-top": '0px', opacity: 1}, 2000);
 
     $('button#hamburger').on('click', function () {
@@ -18,24 +20,17 @@
 
 
 
-    //check to see if any animation containers are currently in view
     function check_if_in_view() {
-        //get current window information
         var window_height = web_window.height();
         var window_top_position = web_window.scrollTop();
         var window_bottom_position = (window_top_position + window_height);
 
-
-        //iterate through elements to see if its in view
         $.each(animation_elements, function () {
-
-            //get the elements information
             var element = $(this);
             var element_height = $(element).outerHeight();
             var element_top_position = $(element).offset().top;
             var element_bottom_position = (element_top_position + element_height);
 
-            //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
             if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
                 if(element.hasClass('skills-line_percentage')){
                     $(this).each(function(){
@@ -46,12 +41,9 @@
                 }
                 element.addClass('in-view');
             }
-            // else {
-            //     element.removeClass('in-view');
-            // }
         });
-
     }
+
 
     if(web_window.width() < 768 ){
         $('.portfolio-myWork__element').addClass('hover');
@@ -72,6 +64,20 @@
 
     $(window).scroll(function () {
         check_if_in_view();
+        var scroll = $(this).scrollTop();
+
+        $("#name, #nameHr, #nameIntro").css({
+            'opacity': 1 - (scroll / 150)
+        });
+
+
+        if (scroll < 200) {
+            $('#navigation-div').removeClass("navigation-div-background");
+        }
+        else {
+            $('#navigation-div').addClass("navigation-div-background");
+        }
+
     });
 
     $(window).trigger('scroll');
@@ -79,26 +85,6 @@
 
 });
 
-//skrolując pojawianie/znikanie elementów
-$(window).scroll(function () {
-    var scroll = $(this).scrollTop();
-
-    $("#name, #nameHr, #nameIntro").css({
-        'opacity': 1 - (scroll / 150)
-    });
-
-
-    if (scroll < 200) {
-        $('#navigation-div').removeClass("navigation-div-background");
-    }
-    else {
-        $('#navigation-div').addClass("navigation-div-background");
-    }
-
-});
-
-
-//Wolne zjeżdżanie strony po kliknięciu łącza z odnośnikiem do sekcji strony
 $(function () {
     $('a[href*=#]:not([href=#])').click(function () {
         $('a').removeClass('activate');
