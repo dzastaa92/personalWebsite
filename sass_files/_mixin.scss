@@ -1,31 +1,73 @@
 
+
+@mixin small {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin xxlarge {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
 @mixin header2() {
-  font-family: $header-font-family;
+  font-family: $navigation-font;
+  text-transform: uppercase;
   padding-top: 80px;
-  /*font-weight: 600;*/
   color: $main-color;
   position: relative;
   z-index: 1;
   overflow: hidden;
   text-align: center;
-  margin-bottom: 1px;
-
-  font-size: 40px;
-  line-height: 40px;
   padding-bottom: 30px;
+  font-size: 30px;
+  line-height: 40px;
+
   @include small {
     line-height: 45px;
   }
-
   @include medium {
     line-height: 50px;
   }
+
   @include large {
-    font-size: 45px;
+    font-size: 40px;
     line-height: 60px;
   }
-  @include xlarge {
-    font-size: 50px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    width:120px;
+    height:3px;
+    background-color: $main-color;
+    bottom:10px;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
 }
@@ -75,36 +117,3 @@
   }
 
 }
-
-@mixin small {
-  @media screen and (min-width: 481px) {
-    @content;
-  }
-}
-
-@mixin medium {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin large {
-  @media screen and (min-width: 992px) {
-    @content;
-  }
-}
-
-@mixin xlarge {
-  @media screen and (min-width: 1200px) {
-    @content;
-  }
-}
-
-@mixin xxlarge {
-  @media screen and (min-width: 1400px) {
-    @content;
-  }
-}
-
-
-

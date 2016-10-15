@@ -112,20 +112,12 @@
             }
 
             a {
-                font-size: 26px;
-                @include small {
-                    font-size: 28px;
-                }
-                @include medium {
-                    font-size: 30px;
-                }
-                @include large {
-                    font-size: 32px;
-                }
-
                 text-decoration: none;
                 color: $navbar-font-color !important;
-                font-family: $header-font-family;
+                font-family: $navigation-font;
+                text-transform: uppercase;
+                font-size: 22px;
+
 
             }
 

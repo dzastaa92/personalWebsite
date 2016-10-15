@@ -8,11 +8,11 @@
     <meta name="keywords"
           content="Front-end developer, front-end, portfolio, Justyna Wojciechowska, strony internetowe, tworzenie stron">
     <link href="../bootstrap/css/bootstrap.css" rel="stylesheet"/>
-    <link href="../css/AllStyles.css" rel="stylesheet"/>
+    <link href="../pre-css/AllStyles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/normalize.css">
 </head>
 <body>
 <nav id="navigation" class="navbar navbar-fixed-top" role="navigation">
-
     <div id="navigation-div" class="container-fluid">
         <div class="navbar-header">
             <button id="hamburger" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -22,7 +22,6 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
-
         <div class="collapse navbar-collapse" id="hide-navbar">
             <ul id="nav">
                 <li><a href="#homeSection">Strona główna</a></li>
@@ -35,19 +34,30 @@
     </div>
 </nav>
 
-
-<section id="homeSection">
-    <div class="container-fluid" id="home">
-
-        <h1 id="name">Justyna <span style="display: block;">Wojciechowska</span></h1>
-        <hr id="nameHr"/>
-        <p id="nameIntro">Junior Front-end Developer</p>
-
-        <!--<a href="#aboutMeSection" class="btn btn-default"></a>
-        <a href="#contactSection" class="btn btn-default"> </a>-->
+<section  id="homeSection"  class="main-section homeSection">
+    <div class="homeSection-content bouncy" id="home">
+        <h1>Justyna Wojciechowska</h1>
+        <p>Junior Front-end Developer</p>
+        <div class="action-wrapper">
+            <a href="#0" class="homeSection-btn main-action" data-hover="Portfolio"> <span>Portfolio</span> </a>
+            <a href="#0" class="homeSection-btn" data-hover="Kontakt"><span>Kontakt</span></a>
+        </div>
     </div>
-
 </section>
+
+
+<!--<section id="homeSection">-->
+    <!--<div class="homeSection-container" id="home">-->
+
+        <!--<h1 id="name">Justyna Wojciechowska</h1>-->
+        <!--<hr id="nameHr"/>-->
+        <!--<p id="nameIntro">Junior Front-end Developer</p>-->
+
+        <!--<a href="#aboutMeSection" class="btn btn-default">About</a>-->
+        <!--<a href="#contactSection" class="btn btn-default">Contact</a>-->
+    <!--</div>-->
+
+<!--</section>-->
 
 <section id="aboutMeSection">
     <div class="container-fluid" id="aboutMe">
@@ -87,7 +97,7 @@
     </div>
 </section>
 
-<section id="skillsSection">
+<section id="skillsSection" class="main-section">
     <div class="skills-container-fluid" id="skills">
         <h2>
             Umiejętności
@@ -205,7 +215,7 @@
     </div>
 </section>
 
-<section id="portfolioSection">
+<section id="portfolioSection" class="main-section">
     <div class="portfolio-container" id="portfolio">
         <h2>Portfolio</h2>
 
@@ -275,7 +285,7 @@
         <a href="https://github.com/dzastaa92" target="_blank" class="github-container__btn">Mój GitHub</a>
     </div>
 </section>
-<section id="contactSection">
+<section id="contactSection" class="main-section">
 
     <div class="container-fluid" id="contact">
 

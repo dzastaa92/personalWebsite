@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     $('section').first().addClass('active');
-    $("#name, #nameHr, #nameIntro").fadeIn( 2000);
+    //$("#name, #nameHr, #nameIntro").fadeIn( 2000);
     $('#nav').css({"margin-top": '-90px', opacity: 0}).animate({"margin-top": '0px', opacity: 1}, 2000);
 
     $('button#hamburger').on('click', function () {

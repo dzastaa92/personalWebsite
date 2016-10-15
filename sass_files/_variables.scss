@@ -1,17 +1,30 @@
 /**Google fonts**/
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600&subset=latin,latin-ext);
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&subset=latin-ext');
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800&subset=latin-ext');
+
+
+// colors
 
 $navbar-background-color: transparent;
 $navbar-font-color: #000000;
-$navbar-font-hover-color: #11a99d;
-$main-color: #11a99d;
-$header-font-family: 'Josefin Sans', Arial, sans-serif;
-$content-font-family:'Open Sans', sans-serif;
+$navbar-font-hover-color: #004a87;
+$main-color: #004a87;
+$main-color-lighter:#3375ac;
 $screen-sm-max: 500px;
 $section-background-color-light: #eff1f6;
 $section-background-color-dark:#626269;
+
+$color-1: #040404; // Black
+$color-2: #004a87; // San Juan
+$color-3: #ffffff; // White
+
+
+// fonts
+$navigation-font:'Raleway', sans-serif;;
 $portfolio-footer-font:'Julius Sans One', Arial, sans-serif;
+$header-font-family: 'Josefin Sans', Arial, sans-serif;
+$content-font-family:'Open Sans', sans-serif;
+$primary-font: 'Open Sans', sans-serif;
