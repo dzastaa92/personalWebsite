@@ -585,6 +585,8 @@ Bouncy
 .about-download {
   text-align: center;
   margin: 50px auto; }
+  .about-download a:hover {
+    cursor: pointer; }
 
 #skills {
   height: 100vh;
