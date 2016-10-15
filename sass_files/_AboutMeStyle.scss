@@ -1,11 +1,13 @@
 
-#aboutMeSection {
-  height: auto;
-  padding: 0;
+.aboutSection {
+  height: 100vh;
+  min-height:1000px;
+  @include medium{
+    min-height:800px;
+  }
 }
 
-#aboutMe {
-
+.about-container {
   margin-bottom: 20px;
   @include medium {
     margin-bottom: 30px;
@@ -19,59 +21,97 @@
     @include header2();
   }
 
-  .row {
-    @include rowMargins();
-    text-align: center;
+  .about-content {
+    margin: 40px auto;
+    @include medium {
+      margin-bottom: 30px;
+      display: flex;
+      display: -webkit-flex;
+      align-content: center;
+    }
 
-    .characterContainer {
-      margin-top: 10px;
+  }
 
-      @include large {
-        margin-top: 30px;
-      }
+}
 
-      i {
-        font-size: 35px;
-      }
+.about-content-photo {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
 
-      hr {
-        width: 50%;
-        background-color: $main-color;
-        border-top-color: $main-color;
-        height: 1px;
-      }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 40%;
+    height: auto;
 
-      p {
-        font-size: 18px;
-        font-family: $content-font-family;
-        @include medium {
-          font-size: 22px;
-        }
+    @include medium {
+      width: 90%;
+    }
 
-        @include large {
-          font-size: 24px;
-        }
+  }
+}
 
-      }
+.about-content-desc {
+
+  @include medium {
+    margin-left: 10%;
+  }
+}
+
+.about-content-desc-elem {
+
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin:20px auto;
+
+  @include medium {
+    justify-content: flex-start;
+    margin: 30px 0;
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+
+  .about-elem-sprite {
+    position: relative;
+    background-image: url("../images/about.png");
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    min-height: 64px;
+  }
+
+  .about-elem-sprite__hello {
+    background-position: 64px 0;
+  }
+  .about-elem-sprite__passion {
+    background-position: 0 0;
+  }
+  .about-elem-sprite__student {
+    background-position: 0 64px;
+  }
+  .about-elem-sprite__traveler {
+    background-position: 64px 64px;
+  }
+
+  span {
+    width: 100%;
+    @include medium {
+      width: auto;
+      margin-left:50px;
+    }
+    @include large {
+      font-size: 2.5rem;
     }
   }
 }
 
-.characterContainer {
-  opacity: 0;
-  -moz-transition: opacity 1000ms linear;
-  -webkit-transition: opacity 1000ms linear;
-  -o-transition: opacity 1000ms linear;
-  transition: opacity 1000ms linear;
-
-  @include large {
-    -moz-transition: opacity 1200ms linear;
-    -webkit-transition: opacity 1200ms linear;
-    -o-transition: opacity 1200ms linear;
-    transition: opacity 1200ms linear;
-
-  }
-}
-.characterContainer.in-view {
-  opacity: 1;
+.about-download {
+  text-align: center;
+  margin: 50px auto;
 }
