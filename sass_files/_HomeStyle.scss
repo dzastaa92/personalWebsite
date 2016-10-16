@@ -93,7 +93,7 @@
   float: left;
 }
 
-.homeSection-btn {
+.allSection-btn {
   display: inline-block;
   font-size: 1.3rem;
   color: #ffffff;
@@ -107,11 +107,11 @@
   height:60px;
 
 }
-.homeSection-btn:nth-of-type(2) {
+.allSection-btn:nth-of-type(2) {
   margin-right: 0;
 }
 
-.homeSection-btn span{
+.allSection-btn span{
   width:150px;
   height:60px;
   line-height:60px;
@@ -125,13 +125,13 @@
   transition: all 0.3s;
 }
 
-.homeSection-btn:hover span{
+.allSection-btn:hover span{
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   transform: translateY(-100%);
 }
 
-.homeSection-btn:after{
+.allSection-btn:after{
   position: absolute;
   content: '';
   color: #202e4a;
@@ -149,7 +149,7 @@
   transition: all 0.3s;
 }
 
-.homeSection-btn:hover:after{
+.allSection-btn:hover:after{
   content: attr(data-hover);
   height:100%;
 }
@@ -157,7 +157,7 @@
 .homeSection-content h1,
 .homeSection-content h1 span,
 .homeSection-content p,
-.homeSection-content .homeSection-btn {
+.homeSection-content .allSection-btn {
   opacity: 0;
   -webkit-animation-duration: 0.8s;
   -moz-animation-duration: 0.8s;
@@ -172,7 +172,7 @@
 .no-cssanimations .homeSection-content h1, .no-cssanimations
 .homeSection-content h1 span, .no-cssanimations
 .homeSection-content p, .no-cssanimations
-.homeSection-content .homeSection-btn {
+.homeSection-content .allSection-btn {
   opacity: 1;
 }
 
@@ -200,19 +200,19 @@ Bouncy
   animation-duration: 0.8s;
 }
 
-.bouncy.homeSection-content .homeSection-btn {
+.bouncy.homeSection-content .allSection-btn {
   -webkit-animation-name: cd-bounce-rotate;
   -moz-animation-name: cd-bounce-rotate;
   animation-name: cd-bounce-rotate;
 }
 
-.bouncy.homeSection-content .homeSection-btn {
+.bouncy.homeSection-content .allSection-btn {
   -webkit-animation-duration: 0.7s;
   -moz-animation-duration: 0.7s;
   animation-duration: 0.7s;
 }
 
-.bouncy.homeSection-content .homeSection-btn.main-action {
+.bouncy.homeSection-content .allSection-btn.main-action {
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   animation-delay: 0.5s;

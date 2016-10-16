@@ -14,16 +14,6 @@
     }
 }
 
-.navigation-div-background{
-
-    @include medium {
-        background-color:#eff1f6;
-        -webkit-box-shadow: 0 4px 5px #777777;
-        -moz-box-shadow: 0 4px 5px #777777;
-        box-shadow: 0 4px 5px #777777;
-    }
-}
-
 .background-collapse{
     background-color:#e7e9ee;
 }
@@ -98,7 +88,7 @@
         padding: 0px;
         list-style: none;
         li {
-            text-align: right;
+            text-align: center;
             text-decoration: none;
 
             @include medium {
@@ -113,12 +103,13 @@
 
             a {
                 text-decoration: none;
-                color: $navbar-font-color !important;
                 font-family: $navigation-font;
                 text-transform: uppercase;
-                font-size: 22px;
-
-
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
             }
 
             a:hover {
@@ -138,5 +129,40 @@
                 color: $main-color !important;
             }
         }
+    }
+}
+
+.navigation-div{
+
+    a{
+        font-size: 22px;
+        color: #000;
+        @include medium {
+            color: #fff;
+            font-size:24px;
+        }
+    }
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.navigation-div-background{
+    a{
+        @include medium {
+            color: #000;
+            font-size:22px;
+        }
+    }
+
+    @include medium {
+        color: black;
+        background-color:#eff1f6;
+        -webkit-box-shadow: 0 4px 5px #777777;
+        -moz-box-shadow: 0 4px 5px #777777;
+        box-shadow: 0 4px 5px #777777;
     }
 }

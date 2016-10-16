@@ -15,7 +15,7 @@ $(document).ready(function () {
     });
 
 
-    var animation_elements = $('.characterContainer, .skills-line_percentage, .contactList');
+    var animation_elements = $('.aboutSection, .skills-line_percentage, .contactList');
     var web_window = $(window);
 
 

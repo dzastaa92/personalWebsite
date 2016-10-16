@@ -1,4 +1,4 @@
-#portfolioSection {
+.portfolioSection {
   background-color: $section-background-color-light;
   min-height: 150vh ;
   height: auto;
@@ -8,7 +8,7 @@
   .portfolio-container {
     h2 {
       @include header2();
-      margin: 0;
+      margin: 0 0 50px 0;
     }
   }
   p:first-of-type {
@@ -16,6 +16,41 @@
   }
 
 }
+
+.portfolio-collection{
+
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+
+  .portfolio-collection-elem{
+    
+    .portfolio-collection-elem-wrapper{
+      background-image: url(../images/preview.png);
+      background-repeat:no-repeat;
+      -webkit-background-size:contain;
+      background-size:contain;
+      position: relative;
+      height:300px;
+      width:450px;
+      margin:20px;
+      img{
+        position: absolute;
+        left:75px;
+        top:10px;
+        max-width:68%;
+        max-height:68%;
+      }
+    }
+    
+  }
+  
+}
+
 
 .portfolio-myWork {
     padding-bottom: 50px;

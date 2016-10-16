@@ -13,7 +13,7 @@
 </head>
 <body>
 <nav id="navigation" class="navbar navbar-fixed-top" role="navigation">
-    <div id="navigation-div" class="container-fluid">
+    <div id="navigation-div" class="container-fluid navigation-div">
         <div class="navbar-header">
             <button id="hamburger" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#hide-navbar">
@@ -34,30 +34,16 @@
     </div>
 </nav>
 
-<section  id="homeSection"  class="main-section homeSection">
+<section id="homeSection" class="main-section homeSection">
     <div class="homeSection-content bouncy" id="home">
         <h1>Justyna Wojciechowska</h1>
         <p>Junior Front-end Developer</p>
         <div class="action-wrapper">
-            <a href="#portfolioSection" class="homeSection-btn " data-hover="Portfolio"> <span>Portfolio</span> </a>
-            <a href="#contactSection" class="homeSection-btn" data-hover="Kontakt"><span>Kontakt</span></a>
+            <a href="#portfolioSection" class="allSection-btn " data-hover="Portfolio"> <span>Portfolio</span> </a>
+            <a href="#contactSection" class="allSection-btn" data-hover="Kontakt"><span>Kontakt</span></a>
         </div>
     </div>
 </section>
-
-
-<!--<section id="homeSection">-->
-    <!--<div class="homeSection-container" id="home">-->
-
-        <!--<h1 id="name">Justyna Wojciechowska</h1>-->
-        <!--<hr id="nameHr"/>-->
-        <!--<p id="nameIntro">Junior Front-end Developer</p>-->
-
-        <!--<a href="#aboutMeSection" class="btn btn-default">About</a>-->
-        <!--<a href="#contactSection" class="btn btn-default">Contact</a>-->
-    <!--</div>-->
-
-<!--</section>-->
 
 <section id="aboutSection" class="main-section aboutSection">
     <div class="about-container" id="about">
@@ -65,32 +51,31 @@
             O mnie
         </h2>
 
-
         <div class="about-content">
             <div class="about-content-photo">
                 <img src="../images/photo.png"/>
             </div>
 
             <div class="about-content-desc">
-                <div class="about-content-desc-elem" >
+                <div class="about-content-desc-elem">
                     <div class="about-elem-sprite about-elem-sprite__hello"></div>
                     <span>
                         Cześć, jestem Justyna!
                     </span>
                 </div>
-                <div class="about-content-desc-elem" >
+                <div class="about-content-desc-elem">
                     <div class="about-elem-sprite about-elem-sprite__passion"></div>
                     <span>
                         Miłośnik technlogii front-endowych
                     </span>
                 </div>
-                <div class="about-content-desc-elem" >
+                <div class="about-content-desc-elem">
                     <div class="about-elem-sprite about-elem-sprite__student"></div>
                     <span>
                         Absolwent informatyki i ekonometrii
                     </span>
                 </div>
-                <div class="about-content-desc-elem" >
+                <div class="about-content-desc-elem">
                     <div class="about-elem-sprite about-elem-sprite__traveler"></div>
                     <span>
                         Zapalony podróżnik oraz pasjonat gotowania
@@ -100,38 +85,13 @@
 
         </div>
 
-        <div class="about-download">
-            <a class="homeSection-btn" data-hover="Pobierz moje CV"><span>Pobierz moje CV</span></a>
-        </div>
 
-        <!--<div class="row">-->
+    </div>
+</section>
 
-            <!--<div class=" col-xs-12 col-sm-6 col-lg-3 characterContainer">-->
-                <!--<i class="glyphicon glyphicon-home"></i>-->
-                <!--<hr/>-->
-                <!--<p>Cześć, jestem Justyna</p>-->
-            <!--</div>-->
-
-            <!--<div class=" col-xs-12 col-sm-6 col-lg-3 characterContainer">-->
-                <!--<i class="glyphicon glyphicon-education"></i>-->
-                <!--<hr/>-->
-                <!--<p>Studiuję informatykę i ekonometrię</p>-->
-            <!--</div>-->
-
-            <!--<div class=" col-xs-12 col-sm-6 col-lg-3 characterContainer">-->
-                <!--<i class="glyphicon glyphicon-heart"></i>-->
-                <!--<hr/>-->
-                <!--<p>Moją miłością są technologie front-endowe</p>-->
-            <!--</div>-->
-
-            <!--<div class=" col-xs-12 col-sm-6 col-lg-3 characterContainer">-->
-                <!--<i class="glyphicon glyphicon-star"></i>-->
-                <!--<hr/>-->
-                <!--<p>A w wolnym czasie oglądam <br/> Grę o Tron i gram w planszówki</p>-->
-            <!--</div>-->
-
-        <!--</div>-->
-
+<section class="showCVSection">
+    <div class="showCV">
+        <a class="allSection-btn showCV-btn" data-hover="Pobierz moje CV" href="../images/CV.png" download><span>Pobierz moje CV</span></a>
     </div>
 </section>
 
@@ -245,15 +205,15 @@
 <section id="developmentSection">
     <div class="development-container">
         <h3>Rozwój</h3>
-        <p>W najbliższym czasie planuję poszerzać moją znajomość JavaScriptu oraz poznać framework Angular.js.</p>
         <div class="development-container-images">
             <img src="../images/js.png"/>
             <img src="../images/angular.png"/>
         </div>
+        <p>W najbliższym czasie planuję poszerzać moją znajomość JavaScriptu oraz poznać framework Angular.js.</p>
     </div>
 </section>
 
-<section id="portfolioSection" class="main-section">
+<section id="portfolioSection" class="main-section portfolioSection">
     <div class="portfolio-container" id="portfolio">
         <h2>Portfolio</h2>
 
@@ -323,6 +283,7 @@
         <a href="https://github.com/dzastaa92" target="_blank" class="github-container__btn">Mój GitHub</a>
     </div>
 </section>
+
 <section id="contactSection" class="main-section">
 
     <div class="container-fluid" id="contact">

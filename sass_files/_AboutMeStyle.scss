@@ -1,9 +1,9 @@
 
 .aboutSection {
-  height: 100vh;
-  min-height:1000px;
-  @include medium{
-    min-height:800px;
+  height: auto;
+  min-height: 800px;
+  @include medium {
+    min-height: 500px;
   }
 }
 
@@ -68,7 +68,7 @@
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  margin:20px auto;
+  margin: 20px auto;
 
   @include medium {
     justify-content: flex-start;
@@ -87,23 +87,23 @@
   }
 
   .about-elem-sprite__hello {
-    background-position: 64px 0;
+    background-position: -64px 0;
   }
   .about-elem-sprite__passion {
     background-position: 0 0;
   }
   .about-elem-sprite__student {
-    background-position: 0 64px;
+    background-position: 0 -64px;
   }
   .about-elem-sprite__traveler {
-    background-position: 64px 64px;
+    background-position: -64px -64px;
   }
 
   span {
     width: 100%;
     @include medium {
       width: auto;
-      margin-left:50px;
+      margin-left: 50px;
     }
     @include large {
       font-size: 2.5rem;
@@ -111,10 +111,75 @@
   }
 }
 
-.about-download {
-  text-align: center;
-  margin: 50px auto;
-  a:hover{
-    cursor: pointer;
+
+.aboutSection .about-content-photo {
+  opacity: 0;
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
+  -moz-transform: translate3d(-50px, 0, 0px);
+  -webkit-transform: translate3d(-50px, 0px, 0px);
+  -o-transform: translate(-50px, 0px);
+  -ms-transform: translate(-50px, 0px);
+  transform: translate3d(-50px, 0px, 0px);
+
+  @include large {
+    -moz-transition: all 1000ms linear;
+    -webkit-transition: all 1000ms linear;
+    -o-transition: all 1000ms linear;
+    transition: all 1000ms linear;
+    -moz-transform: translate3d(-100px, 0px, 0px);
+    -webkit-transform: translate3d(-100px, 0px, 0px);
+    -o-transform: translate(-100px, 0px);
+    -ms-transform: translate(-100px, 0px);
+    transform: translate3d(-100px, 0px, 0px);
   }
+}
+
+.aboutSection .about-content-desc {
+  opacity: 0;
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
+  -moz-transform: translate3d(50px, 0, 0px);
+  -webkit-transform: translate3d(50px, 0px, 0px);
+  -o-transform: translate(50px, 0px);
+  -ms-transform: translate(50px, 0px);
+  transform: translate3d(50px, 0px, 0px);
+
+  @include large {
+    -moz-transition: all 1000ms linear;
+    -webkit-transition: all 1000ms linear;
+    -o-transition: all 1000ms linear;
+    transition: all 1000ms linear;
+    -moz-transform: translate3d(100px, 0px, 0px);
+    -webkit-transform: translate3d(100px, 0px, 0px);
+    -o-transform: translate(100px, 0px);
+    -ms-transform: translate(100px, 0px);
+    transform: translate3d(100px, 0px, 0px);
+  }
+}
+
+.aboutSection h2, .aboutSection .about-download {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.aboutSection.in-view h2, .aboutSection.in-view .about-download {
+  opacity: 1;
+}
+
+.aboutSection.in-view .about-content-photo, .aboutSection.in-view .about-content-desc {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
 }
