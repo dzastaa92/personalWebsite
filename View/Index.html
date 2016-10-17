@@ -10,6 +10,7 @@
     <link href="../bootstrap/css/bootstrap.css" rel="stylesheet"/>
     <link href="../pre-css/AllStyles.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../css/normalize.css">
+    <script src="../Scripts/modernizr.js"></script>
 </head>
 <body>
 <nav id="navigation" class="navbar navbar-fixed-top" role="navigation">
@@ -217,70 +218,68 @@
     <div class="portfolio-container" id="portfolio">
         <h2>Portfolio</h2>
 
+        <div class="cd-slider-wrapper">
+            <ul class="cd-slider">
+                <li class="is-visible">
+                    <div class="cd-half-block image"></div>
 
-        <div class="portfolio-myWork">
+                    <div class="cd-half-block content">
+                        <div>
+                            <h3>Wapik Template</h3>
+                            <p>
+                                Strona przygotowana na podstawie szablonu PSD.
+                            </p>
+                            <a href="http://wapiktemplate.azurewebsites.net/" class="btn" target="_blank">Przejdź do strony</a>
+                        </div>
+                    </div>
+                </li> <!-- .cd-half-block.content -->
 
-            <figure class="portfolio-myWork__element">
-                <img src="../images/wapik.jpg"/>
-                <figcaption>
-                    <h3>Wapik Template</h3>
-                    <p>Strona wykonana na podstawie szablonu psd</p>
-                </figcaption>
+                <li>
+                    <div class="cd-half-block image"></div>
 
-                <a href="http://wapiktemplate.azurewebsites.net/" target="_blank">
-                 </a>
-            </figure>
+                    <div class="cd-half-block content light-bg">
+                        <div>
+                            <h3>Fashion Smart Template</h3>
+                            <p>
+                                Strona przygotowana na podstawie szablonu PSD.
+                            </p>
+                            <a href="http://fashionsmart.azurewebsites.net/" class="btn" target="_blank">Przejdź do strony</a>
+                        </div>
+                    </div> <!-- .cd-half-block.content -->
+                </li>
 
-            <figure class="portfolio-myWork__element">
-                <img src="../images/fashionTemplate.jpg"/>
-                <figcaption>
-                    <h3> Fashion Template</h3>
-                    <p>Strona wykonana na podstawie szablonu PSD</p>
-                </figcaption>
-                <a href="http://fashionsmart.azurewebsites.net/" target="_blank">
-                </a>
-            </figure>
-            <figure class="portfolio-myWork__element">
-                <img src="../images/handmade.JPG"/>
-                <figcaption>
-                    <h3>HandMade Dzasty</h3>
-                    <p>Pierwszy zrealizowany projekt - sklep internetowy z biżuterią handmade</p>
-                </figcaption>
-                <a href="http://handmadedzasty.azurewebsites.net" target="_blank">
-                    </a>
-            </figure>
+                <li>
+                    <div class="cd-half-block image"></div>
 
-            <figure class="portfolio-myWork__element">
-                <img src="../images/itad.jpg"/>
-                <figcaption>
-                    <h3>ITAD 2015</h3>
-                    <p>Strona internetowa konferencji IT Academic Day na Uniwersytecie Ekonomicznym</p>
-                </figcaption>
-                <a href="http://uep.itad.poznan.pl/" target="_blank">
-                    </a>
-            </figure>
+                    <div class="cd-half-block content">
+                        <div>
+                            <h3>Portfolio</h3>
+                            <p>
+                                Własny projekt portfolio.
+                            </p>
+                            <a href="http://www.justynawojciechowska.pl/" class="btn" target="_blank">Przejdź do strony</a>
+                        </div>
+                    </div> <!-- .cd-half-block.content -->
+                </li>
 
-            <figure class="portfolio-myWork__element">
-                <img src="../images/portfolio.jpg"/>
-                <figcaption>
-                    <h3>Personal Web Page</h3>
-                    <p>Moja wizytówka i portfolio</p>
-                </figcaption>
-                <a href="http://justynawojciechowska.pl/" target="_blank">
-                   </a>
-            </figure>
+                <li>
+                    <div class="cd-half-block image"></div>
 
-            <figure class="portfolio-myWork__element">
-                <img src=""/>
-                <figcaption>
-                    <h3>Jacht</h3>
-                    <p>Strona firmowa na Wordpress Cooming soon</p>
-                </figcaption>
-                <a href="http://justynawojciechowska.pl/" target="_blank">
-                </a>
-            </figure>
+                    <div class="cd-half-block content">
+                        <div>
+                            <h3>Jacht</h3>
+                            <p>
+                                Strona w przygotowaniu, dla firmy zajmującej się prowadzeniem szkoleń żeglarskich.
+                            </p>
+                            <p>
+                                Projekt wykonany w CMS Wordpress.
+                            </p>
+                        </div>
+                    </div> <!-- .cd-half-block.content -->
+                </li>
+            </ul> <!-- .cd-slider -->
+        </div> <!-- .cd-slider-wrapper -->
 
-        </div>
     </div>
     <div class="portfolio-separator"></div>
 </section>
@@ -342,7 +341,10 @@
 </footer>
 
 <script src="../Scripts/jquery-2.1.4.js"></script>
+<script src="../Scripts/jquery.mobile.custom.min.js"></script>
 <script src="../bootstrap/js/bootstrap.js"></script>
 <script src="../Scripts/mainScript.js"></script>
+<script src="../Scripts/portfolioAnimation.js"></script>
+
 </body>
 </html>
