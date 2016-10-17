@@ -970,6 +970,37 @@ Bouncy
     height: 80px;
     margin: 0 20px; }
 
+.development-container {
+  opacity: 0;
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
+  -moz-transform: translate3d(0px, 50px, 0px);
+  -webkit-transform: translate3d(0px, 50px, 0px);
+  -o-transform: translate(0px, 50px);
+  -ms-transform: translate(0px, 50px);
+  transform: translate3d(0px, 50px, 0px); }
+  @media screen and (min-width: 992px) {
+    .development-container {
+      -moz-transition: all 1000ms linear;
+      -webkit-transition: all 1000ms linear;
+      -o-transition: all 1000ms linear;
+      transition: all 1000ms linear;
+      -moz-transform: translate3d(0px, 100px, 0px);
+      -webkit-transform: translate3d(0px, 100px, 0px);
+      -o-transform: translate(0px, 100px);
+      -ms-transform: translate(0px, 100px);
+      transform: translate3d(0px, 100px, 0px); } }
+
+.development-container.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px); }
+
 .portfolioSection {
   background-color: #eff1f6;
   height: auto;
@@ -1015,6 +1046,22 @@ Bouncy
       -o-transform: translateX(-50%);
       transform: translateX(-50%); }
 
+.portfolioSection {
+  opacity: 0;
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear; }
+  @media screen and (min-width: 992px) {
+    .portfolioSection {
+      -moz-transition: all 1000ms linear;
+      -webkit-transition: all 1000ms linear;
+      -o-transition: all 1000ms linear;
+      transition: all 1000ms linear; } }
+
+.portfolioSection.in-view {
+  opacity: 1; }
+
 /* --------------------------------
 
 Slider
@@ -1024,10 +1071,9 @@ Slider
   position: relative;
   height: 100vh;
   padding: 10px; }
-
-@media only screen and (min-width: 900px) {
-  .cd-slider-wrapper {
-    padding: 30px; } }
+  @media screen and (min-width: 992px) {
+    .cd-slider-wrapper {
+      padding: 0; } }
 
 .cd-slider {
   position: relative;
