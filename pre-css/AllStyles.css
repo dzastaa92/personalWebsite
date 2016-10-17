@@ -673,7 +673,7 @@ Bouncy
 
 .showCVSection {
   height: 300px;
-  background-color: #7c7c81;
+  background-color: #6f6f74;
   position: relative; }
   .showCVSection .showCV {
     margin: auto;
@@ -813,7 +813,7 @@ Bouncy
 
 #githubSection {
   height: auto;
-  background-color: #7c7c81;
+  background-color: #6f6f74;
   color: #ffffff; }
   #githubSection .github-container {
     padding: 50px 0 60px 0;
@@ -860,7 +860,12 @@ Bouncy
     font-size: 16px;
     font-weight: 600;
     margin: 0;
-    color: white; }
+    color: white;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
     @media screen and (min-width: 768px) {
       #githubSection .github-container__btn {
         position: absolute;
@@ -876,9 +881,9 @@ Bouncy
       #githubSection .github-container__btn {
         padding: 15px 40px; } }
   #githubSection .github-container__btn:hover {
-    border: black 1px solid;
+    border: black 1px #6f6f74;
     background-color: white;
-    color: black;
+    color: #6f6f74;
     text-decoration: none; }
 
 #developmentSection {
@@ -967,8 +972,8 @@ Bouncy
 
 .portfolioSection {
   background-color: #eff1f6;
-  min-height: 150vh;
-  height: auto; }
+  height: auto;
+  padding: 0; }
   @media screen and (min-width: 768px) {
     .portfolioSection {
       min-height: 80vh; } }
@@ -1012,30 +1017,6 @@ Bouncy
   .portfolioSection p:first-of-type {
     text-align: center; }
 
-.portfolio-collection {
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-  .portfolio-collection .portfolio-collection-elem .portfolio-collection-elem-wrapper {
-    background-image: url(../images/preview.png);
-    background-repeat: no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain;
-    position: relative;
-    height: 300px;
-    width: 450px;
-    margin: 20px; }
-    .portfolio-collection .portfolio-collection-elem .portfolio-collection-elem-wrapper img {
-      position: absolute;
-      left: 75px;
-      top: 10px;
-      max-width: 68%;
-      max-height: 68%; }
-
 .portfolio-myWork {
   padding-bottom: 50px;
   display: flex;
@@ -1046,17 +1027,18 @@ Bouncy
 
 .portfolio-myWork__element {
   position: relative;
+  margin: 0;
   float: left;
   overflow: hidden;
-  margin: 10px 2%;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
+  width: 50%;
   color: #fff;
   text-align: center;
   font-size: 16px;
-  background-color: #7c7c81;
+  background-color: #6f6f74;
   line-height: 1.5em; }
+  @media screen and (min-width: 768px) {
+    .portfolio-myWork__element {
+      width: 33.333%; } }
 
 .portfolio-myWork__element *,
 .portfolio-myWork__element *:before,
@@ -1120,7 +1102,7 @@ Bouncy
   bottom: 0;
   top: auto;
   z-index: 1;
-  background-color: #7c7c81;
+  background-color: #6f6f74;
   color: #eff1f6; }
 
 .portfolio-separator {
@@ -1219,7 +1201,7 @@ Bouncy
 
 footer {
   height: 20vh;
-  background-color: #7c7c81;
+  background-color: #6f6f74;
   position: relative; }
   footer .footer-container {
     text-align: center;

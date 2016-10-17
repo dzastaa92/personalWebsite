@@ -71,7 +71,7 @@ $(document).ready(function () {
         });
 
 
-        if (scroll < 200) {
+        if (scroll < 50) {
             $('#navigation-div').removeClass("navigation-div-background");
         }
         else {

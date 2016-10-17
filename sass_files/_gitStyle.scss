@@ -56,6 +56,11 @@
     font-weight: 600;
     margin: 0;
     color: white;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
     @include medium {
       position: absolute;
       padding: 10px 30px;
@@ -73,9 +78,9 @@
     }
   }
   .github-container__btn:hover{
-    border: black 1px solid;
+    border: black 1px $section-background-color-dark;
     background-color: white;
-    color: black;
+    color: $section-background-color-dark;
     text-decoration: none;
   }
 }
