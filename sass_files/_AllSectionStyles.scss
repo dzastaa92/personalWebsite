@@ -1,8 +1,11 @@
 
 body{
   overflow-x: hidden;
-  font-family: $content-font-family
+  font-family: $content-font-family;
 }
+
+
+
 .main-section{
   height:100vh;
   min-height:600px;
@@ -25,6 +28,24 @@ section{
   @include xxlarge {
     padding: 0 200px;
   }
+}
+.page-scale{
+
+  -webkit-transition: transform 0.5s, opacity 0.4s;
+  -moz-transition: transform 0.5s, opacity 0.4s;
+  -ms-transition: transform 0.5s, opacity 0.4s;
+  -o-transition: transform 0.5s, opacity 0.4s;
+  transition: transform 0.5s, opacity 0.4s;
+
+  &.navbar-open{
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity:0;
+  }
+
 }
 
 

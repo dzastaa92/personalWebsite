@@ -14,18 +14,17 @@
 </head>
 <body>
 
-<nav id="navigation" class="navbar navbar-fixed-top" role="navigation">
+<nav id="navigation" class="navbar navbar-fixed-top navigation-hidden" role="navigation">
+
+    <div id="hamburger" class="hamburger-hide">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <div id="navigation-div" class="container-fluid navigation-div">
-        <div class="navbar-header">
-            <button id="hamburger" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#hide-navbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="hide-navbar">
-            <ul id="nav">
+        <div>
+            <ul id="nav" class="navigation-elements">
                 <li><a href="#homeSection">Strona główna</a></li>
                 <li><a href="#aboutSection">O mnie</a></li>
                 <li><a href="#skillsSection">Umiejętności</a></li>
@@ -34,313 +33,328 @@
             </ul>
         </div>
     </div>
-</nav>
-
-<section id="homeSection" class="main-section homeSection">
-    <div class="homeSection-content bouncy" id="home">
-        <h1>Justyna Wojciechowska</h1>
-        <p>Junior Front-end Developer</p>
-        <div class="action-wrapper">
-            <a href="#portfolioSection" class="allSection-btn " data-hover="Portfolio"> <span>Portfolio</span> </a>
-            <a href="#contactSection" class="allSection-btn" data-hover="Kontakt"><span>Kontakt</span></a>
+    <div class="navigation-contact">
+        <div class="navigation-contact-data">
+            <p>+48 695-946-890</p>
+            <p>justyna.wojciechowska04@gmail.com</p>
+        </div>
+        <div class="navigation-contact-social">
+            <a href=""><img src="../images/linkedin.png"></a>
+            <a href=""><img src="../images/pinterest.png"></a>
         </div>
     </div>
-</section>
+</nav>
+<div class="page-scale">
 
-<section id="aboutSection" class="main-section aboutSection">
-    <div class="about-container" id="about">
-        <h2>
-            O mnie
-        </h2>
-
-        <div class="about-content">
-            <div class="about-content-photo">
-                <img src="../images/photo.png"/>
+    <section id="homeSection" class="main-section homeSection">
+        <div class="homeSection-content bouncy" id="home">
+            <h1>Justyna Wojciechowska</h1>
+            <p>Junior Front-end Developer</p>
+            <div class="action-wrapper">
+                <a href="#portfolioSection" class="allSection-btn " data-hover="Portfolio"> <span>Portfolio</span> </a>
+                <a href="#contactSection" class="allSection-btn" data-hover="Kontakt"><span>Kontakt</span></a>
             </div>
+        </div>
+    </section>
 
-            <div class="about-content-desc">
-                <div class="about-content-desc-elem">
-                    <div class="about-elem-sprite about-elem-sprite__hello"></div>
-                    <span>
+    <section id="aboutSection" class="main-section aboutSection">
+        <div class="about-container" id="about">
+            <h2>
+                O mnie
+            </h2>
+
+            <div class="about-content">
+                <div class="about-content-photo">
+                    <img src="../images/photo.png"/>
+                </div>
+
+                <div class="about-content-desc">
+                    <div class="about-content-desc-elem">
+                        <div class="about-elem-sprite about-elem-sprite__hello"></div>
+                        <span>
                         Cześć, jestem Justyna!
                     </span>
-                </div>
-                <div class="about-content-desc-elem">
-                    <div class="about-elem-sprite about-elem-sprite__passion"></div>
-                    <span>
+                    </div>
+                    <div class="about-content-desc-elem">
+                        <div class="about-elem-sprite about-elem-sprite__passion"></div>
+                        <span>
                         Miłośnik technlogii front-endowych
                     </span>
-                </div>
-                <div class="about-content-desc-elem">
-                    <div class="about-elem-sprite about-elem-sprite__student"></div>
-                    <span>
+                    </div>
+                    <div class="about-content-desc-elem">
+                        <div class="about-elem-sprite about-elem-sprite__student"></div>
+                        <span>
                         Absolwent informatyki i ekonometrii
                     </span>
-                </div>
-                <div class="about-content-desc-elem">
-                    <div class="about-elem-sprite about-elem-sprite__traveler"></div>
-                    <span>
+                    </div>
+                    <div class="about-content-desc-elem">
+                        <div class="about-elem-sprite about-elem-sprite__traveler"></div>
+                        <span>
                         Zapalony podróżnik oraz pasjonat gotowania
                     </span>
-                </div>
-            </div>
-
-        </div>
-
-
-    </div>
-</section>
-
-<!--<section class="showCVSection">-->
-    <!--<div class="showCV">-->
-        <!--<a class="allSection-btn showCV-btn" data-hover="Pobierz moje CV" href="../images/CV.png" download><span>Pobierz moje CV</span></a>-->
-    <!--</div>-->
-<!--</section>-->
-
-<section id="skillsSection" class="main-section">
-    <div class="skills-container-fluid" id="skills">
-        <h2>
-            Umiejętności
-        </h2>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-lg-3 skills">
-                <h3>HTML5</h3>
-                <p>Dobra znajomość</p>
-                <div class="skills-line">
-                    <div class="skills-line_percentage skills-line__html" data-percentage="75%"></div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-3 skills">
-                <h3>CSS3</h3>
-                <p>Dobra znajomość</p>
-                <div class="skills-line">
-                    <div class="skills-line_percentage skills-line__css" data-percentage="75%"></div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3 skills">
-                <h3>JavaScript</h3>
-                <p>Podstawowa znajomość</p>
-                <div class="skills-line">
-                    <div class="skills-line_percentage skills-line__javascript" data-percentage="40%"></div>
-                </div>
-            </div>
-
-
-            <div class="col-xs-12 col-sm-6 col-lg-3 skills">
-                <h3>jQuery</h3>
-                <p>Podstawowa znajomość</p>
-                <div class="skills-line">
-                    <div class="skills-line_percentage skills-line__jquery" data-percentage="50%"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-xs-12 col-sm-6 col-lg-3 skills">
-                <h3>RWD</h3>
-                <p>Dobra znajomość</p>
-                <div class="skills-line">
-                    <div class="skills-line_percentage skills-line__rwd" data-percentage="60%"></div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-3 skills">
-                <h3>Sass</h3>
-                <p>Dobra znajomość</p>
-                <div class="skills-line">
-                    <div class="skills-line_percentage skills-line__sass" data-percentage="65%"></div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-3 skills">
-                <h3>Bootstrap</h3>
-                <p>Dobra znajomość
-                <div class="skills-line">
-                    <div class="skills-line_percentage skills-line__bootstrap" data-percentage="60%"></div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3 skills">
-                <h3>Photoshop</h3>
-                <p>Podstawowa znajomość</p>
-                <div class="skills-line">
-                    <div class="skills-line_percentage skills-line__photoshop" data-percentage="40%"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row skills-basic">
-            <div class="col-xs-6 col-sm-4 col-lg-2 skills">
-                <h3>Wordpress</h3>
-                <p>Podstawowa znajomość</p>
-            </div>
-
-            <div class="col-xs-6 col-sm-4 col-lg-2 skills">
-                <h3>Git</h3>
-                <p>Podstawowa znajomość</p>
-            </div>
-
-            <div class="col-xs-6 col-sm-4 col-lg-2 skills">
-                <h3>Gulp</h3>
-                <p>Podstawowa znajomość</p>
-            </div>
-
-            <div class="col-xs-6 col-sm-4 col-lg-2 skills">
-                <h3>Gimp</h3>
-                <p>Podstawowa znajomość</p>
-            </div>
-
-            <div class="col-xs-6 col-sm-4 col-lg-2 skills">
-                <h3>SEO</h3>
-                <p>Podstawowa znajomość</p>
-            </div>
-            <div class="col-xs-6 col-sm-4 col-lg-2 skills">
-                <h3>SQL</h3>
-                <p>Dobra znajomość</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="developmentSection">
-    <div class="development-container">
-        <h3>Rozwój</h3>
-        <div class="development-container-images">
-            <img src="../images/js.png"/>
-            <img src="../images/angular.png"/>
-        </div>
-        <p>W najbliższym czasie planuję poszerzać moją znajomość JavaScriptu oraz poznać framework Angular.js.</p>
-    </div>
-</section>
-
-<section id="portfolioSection" class="main-section portfolioSection">
-    <div class="portfolio-container" id="portfolio">
-        <h2>Portfolio</h2>
-
-        <div class="cd-slider-wrapper">
-            <ul class="cd-slider">
-                <li class="is-visible">
-                    <div class="cd-half-block image"></div>
-
-                    <div class="cd-half-block content">
-                        <div>
-                            <h3>Wapik Template</h3>
-                            <p>
-                                Strona przygotowana na podstawie szablonu PSD.
-                            </p>
-                            <a href="http://wapiktemplate.azurewebsites.net/" class="btn" target="_blank">Przejdź do strony</a>
-                        </div>
                     </div>
-                </li> <!-- .cd-half-block.content -->
+                </div>
 
-                <li>
-                    <div class="cd-half-block image"></div>
-
-                    <div class="cd-half-block content light-bg">
-                        <div>
-                            <h3>Fashion Smart Template</h3>
-                            <p>
-                                Strona przygotowana na podstawie szablonu PSD.
-                            </p>
-                            <a href="http://fashionsmart.azurewebsites.net/" class="btn" target="_blank">Przejdź do strony</a>
-                        </div>
-                    </div> <!-- .cd-half-block.content -->
-                </li>
-
-                <li>
-                    <div class="cd-half-block image"></div>
-
-                    <div class="cd-half-block content">
-                        <div>
-                            <h3>Portfolio</h3>
-                            <p>
-                                Własny projekt portfolio.
-                            </p>
-                            <a href="http://www.justynawojciechowska.pl/" class="btn" target="_blank">Przejdź do strony</a>
-                        </div>
-                    </div> <!-- .cd-half-block.content -->
-                </li>
-
-                <li>
-                    <div class="cd-half-block image"></div>
-
-                    <div class="cd-half-block content">
-                        <div>
-                            <h3>Jacht</h3>
-                            <p>
-                                Strona w przygotowaniu, dla firmy zajmującej się prowadzeniem szkoleń żeglarskich.
-                            </p>
-                            <p>
-                                Projekt wykonany w CMS Wordpress.
-                            </p>
-                        </div>
-                    </div> <!-- .cd-half-block.content -->
-                </li>
-            </ul> <!-- .cd-slider -->
-        </div> <!-- .cd-slider-wrapper -->
-
-    </div>
-    <div class="portfolio-separator"></div>
-</section>
-
-<section id="githubSection">
-    <div class="github-container">
-        <img src="../images/github-white.png"/>
-        <h1>Moje projekty udostępnione na GitHubie</h1>
-        <a href="https://github.com/dzastaa92" target="_blank" class="github-container__btn">Mój GitHub</a>
-    </div>
-</section>
-
-<section id="contactSection" class="main-section">
-
-    <div class="container-fluid" id="contact">
-
-        <h2>Kontakt</h2>
-
-        <div class="row">
-            <div class="col-xs-12">
-
-                <ul class="contactList">
-                    <li>
-                        <i class="glyphicon glyphicon-phone-alt"></i>
-                        <p>telefon</p>
-                        <hr/>
-                        <p>695946890</p>
-                    </li>
-                    <li>
-                        <i class="glyphicon glyphicon-envelope"></i>
-                        <p>e-mail</p>
-                        <hr/>
-                        <p>justyna_wojciechowska92@vp.pl </p>
-                    </li>
-                    <li>
-                        <i class="glyphicon glyphicon-home"></i>
-                        <p>miasto</p>
-                        <hr/>
-                        <p>Poznań</p>
-                    </li>
-
-                </ul>
             </div>
 
 
         </div>
-    </div>
-</section>
+    </section>
 
-<footer>
-    <div class="footer-container">
+    <!--<section class="showCVSection">-->
+    <!--<div class="showCV">-->
+    <!--<a class="allSection-btn showCV-btn" data-hover="Pobierz moje CV" href="../images/CV.png" download><span>Pobierz moje CV</span></a>-->
+    <!--</div>-->
+    <!--</section>-->
 
-        <a href="#home">
-            <i class="glyphicon glyphicon-chevron-up"></i>
-        </a>
+    <section id="skillsSection" class="main-section">
+        <div class="skills-container-fluid" id="skills">
+            <h2>
+                Umiejętności
+            </h2>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-lg-3 skills">
+                    <h3>HTML5</h3>
+                    <p>Dobra znajomość</p>
+                    <div class="skills-line">
+                        <div class="skills-line_percentage skills-line__html" data-percentage="75%"></div>
+                    </div>
+                </div>
 
-        <p>@2016 Justyna Wojciechowska</p>
-    </div>
-</footer>
+                <div class="col-xs-12 col-sm-6 col-lg-3 skills">
+                    <h3>CSS3</h3>
+                    <p>Dobra znajomość</p>
+                    <div class="skills-line">
+                        <div class="skills-line_percentage skills-line__css" data-percentage="75%"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 skills">
+                    <h3>JavaScript</h3>
+                    <p>Podstawowa znajomość</p>
+                    <div class="skills-line">
+                        <div class="skills-line_percentage skills-line__javascript" data-percentage="40%"></div>
+                    </div>
+                </div>
 
+
+                <div class="col-xs-12 col-sm-6 col-lg-3 skills">
+                    <h3>jQuery</h3>
+                    <p>Podstawowa znajomość</p>
+                    <div class="skills-line">
+                        <div class="skills-line_percentage skills-line__jquery" data-percentage="50%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-lg-3 skills">
+                    <h3>RWD</h3>
+                    <p>Dobra znajomość</p>
+                    <div class="skills-line">
+                        <div class="skills-line_percentage skills-line__rwd" data-percentage="60%"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-3 skills">
+                    <h3>Sass</h3>
+                    <p>Dobra znajomość</p>
+                    <div class="skills-line">
+                        <div class="skills-line_percentage skills-line__sass" data-percentage="65%"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-lg-3 skills">
+                    <h3>Bootstrap</h3>
+                    <p>Dobra znajomość
+                    <div class="skills-line">
+                        <div class="skills-line_percentage skills-line__bootstrap" data-percentage="60%"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 skills">
+                    <h3>Photoshop</h3>
+                    <p>Podstawowa znajomość</p>
+                    <div class="skills-line">
+                        <div class="skills-line_percentage skills-line__photoshop" data-percentage="40%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row skills-basic">
+                <div class="col-xs-6 col-sm-4 col-lg-2 skills">
+                    <h3>Wordpress</h3>
+                    <p>Podstawowa znajomość</p>
+                </div>
+
+                <div class="col-xs-6 col-sm-4 col-lg-2 skills">
+                    <h3>Git</h3>
+                    <p>Podstawowa znajomość</p>
+                </div>
+
+                <div class="col-xs-6 col-sm-4 col-lg-2 skills">
+                    <h3>Gulp</h3>
+                    <p>Podstawowa znajomość</p>
+                </div>
+
+                <div class="col-xs-6 col-sm-4 col-lg-2 skills">
+                    <h3>Gimp</h3>
+                    <p>Podstawowa znajomość</p>
+                </div>
+
+                <div class="col-xs-6 col-sm-4 col-lg-2 skills">
+                    <h3>SEO</h3>
+                    <p>Podstawowa znajomość</p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-lg-2 skills">
+                    <h3>SQL</h3>
+                    <p>Dobra znajomość</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -->
+    <section id="developmentSection">
+        <div class="development-container">
+            <h3>Rozwój</h3>
+            <div class="development-container-images">
+                <img src="../images/js.png"/>
+                <img src="../images/angular.png"/>
+            </div>
+            <p>W najbliższym czasie planuję poszerzać moją znajomość JavaScriptu oraz poznać framework Angular.js.</p>
+        </div>
+    </section>
+
+    <section id="portfolioSection" class="main-section portfolioSection">
+        <div class="portfolio-container" id="portfolio">
+            <h2>Portfolio</h2>
+
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="is-visible">
+                        <div class="cd-half-block image"></div>
+
+                        <div class="cd-half-block content">
+                            <div>
+                                <h3>Wapik Template</h3>
+                                <p>
+                                    Strona przygotowana na podstawie szablonu PSD.
+                                </p>
+                                <a href="http://wapiktemplate.azurewebsites.net/" class="btn" target="_blank">Przejdź do
+                                    strony</a>
+                            </div>
+                        </div>
+                    </li> <!-- .cd-half-block.content -->
+
+                    <li>
+                        <div class="cd-half-block image"></div>
+
+                        <div class="cd-half-block content light-bg">
+                            <div>
+                                <h3>Fashion Smart Template</h3>
+                                <p>
+                                    Strona przygotowana na podstawie szablonu PSD.
+                                </p>
+                                <a href="http://fashionsmart.azurewebsites.net/" class="btn" target="_blank">Przejdź do
+                                    strony</a>
+                            </div>
+                        </div> <!-- .cd-half-block.content -->
+                    </li>
+
+                    <li>
+                        <div class="cd-half-block image"></div>
+
+                        <div class="cd-half-block content">
+                            <div>
+                                <h3>Portfolio</h3>
+                                <p>
+                                    Własny projekt portfolio.
+                                </p>
+                                <a href="http://www.justynawojciechowska.pl/" class="btn" target="_blank">Przejdź do
+                                    strony</a>
+                            </div>
+                        </div> <!-- .cd-half-block.content -->
+                    </li>
+
+                    <li>
+                        <div class="cd-half-block image"></div>
+
+                        <div class="cd-half-block content">
+                            <div>
+                                <h3>Jacht</h3>
+                                <p>
+                                    Strona w przygotowaniu, dla firmy zajmującej się prowadzeniem szkoleń żeglarskich.
+                                </p>
+                                <p>
+                                    Projekt wykonany w CMS Wordpress.
+                                </p>
+                            </div>
+                        </div> <!-- .cd-half-block.content -->
+                    </li>
+                </ul> <!-- .cd-slider -->
+            </div> <!-- .cd-slider-wrapper -->
+
+        </div>
+        <div class="portfolio-separator"></div>
+    </section>
+
+    <section id="githubSection">
+        <div class="github-container">
+            <img src="../images/github-white.png"/>
+            <h1>Moje projekty udostępnione na GitHubie</h1>
+            <a href="https://github.com/dzastaa92" target="_blank" class="github-container__btn">Mój GitHub</a>
+        </div>
+    </section>
+
+    <section id="contactSection" class="main-section">
+
+        <div class="container-fluid" id="contact">
+
+            <h2>Kontakt</h2>
+
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <ul class="contactList">
+                        <li>
+                            <i class="glyphicon glyphicon-phone-alt"></i>
+                            <p>telefon</p>
+                            <hr/>
+                            <p>695946890</p>
+                        </li>
+                        <li>
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            <p>e-mail</p>
+                            <hr/>
+                            <p>justyna_wojciechowska92@vp.pl </p>
+                        </li>
+                        <li>
+                            <i class="glyphicon glyphicon-home"></i>
+                            <p>miasto</p>
+                            <hr/>
+                            <p>Poznań</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+
+            <a href="#home">
+                <i class="glyphicon glyphicon-chevron-up"></i>
+            </a>
+
+            <p>@2016 Justyna Wojciechowska</p>
+        </div>
+    </footer>
+
+</div>
 <script src="../Scripts/jquery-2.1.4.js"></script>
 <script src="../Scripts/jquery.mobile.custom.min.js"></script>
 <script src="../bootstrap/js/bootstrap.js"></script>
