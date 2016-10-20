@@ -22,7 +22,7 @@ $(document).ready(function () {
         $('#hamburger').click();
     });
 
-    var animation_elements = $('.aboutSection, .skills-line_percentage, .contactList, .development-container, .portfolioSection');
+    var animation_elements = $('.aboutSection, .skills-line_percentage, .contactList, .development-container, .portfolioSection, .skills-container, .github-container');
     var web_window = $(window);
 
     function check_if_in_view() {
