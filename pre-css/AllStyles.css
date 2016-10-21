@@ -592,12 +592,14 @@ Bouncy
 .aboutSection {
   height: auto;
   min-height: 100%;
-  padding: 50px 5%;
+  padding: 50px 5px;
   background-color: #404044; }
-
-@media screen and (min-width: 1400px) {
-  .aboutSection {
-    padding: 80px 10%; } }
+  @media screen and (min-width: 480px) {
+    .aboutSection {
+      padding: 50px 5%; } }
+  @media screen and (min-width: 1400px) {
+    .aboutSection {
+      padding: 80px 10%; } }
 
 .about-container h2 {
   font-family: "Raleway", sans-serif;
@@ -782,40 +784,38 @@ Primary style
 
 .cd-intro {
   margin: 4em auto; }
-
-@media only screen and (min-width: 768px) {
-  .cd-intro {
-    margin: 5em auto; } }
-
-@media only screen and (min-width: 1170px) {
-  .cd-intro {
-    margin: 6em auto; } }
+  @media screen and (min-width: 768px) {
+    .cd-intro {
+      margin: 5em auto; } }
+  @media screen and (min-width: 1200px) {
+    .cd-intro {
+      margin: 6em auto; } }
 
 .cd-headline {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   color: #fff; }
+  @media screen and (min-width: 768px) {
+    .cd-headline {
+      font-size: 3.5rem;
+      font-weight: 300; } }
+  @media screen and (min-width: 992px) {
+    .cd-headline {
+      font-size: 4.5rem; } }
+  @media screen and (min-width: 1400px) {
+    .cd-headline {
+      font-size: 5.5rem; } }
   .cd-headline p {
-    font-size: 3.1rem; }
-
-@media only screen and (min-width: 768px) {
-  .cd-headline {
-    font-size: 3.5rem;
-    font-weight: 300; }
-    .cd-headline p {
-      font-size: 3.7rem; } }
-
-@media only screen and (min-width: 1170px) {
-  .cd-headline {
-    font-size: 4.5rem; }
-    .cd-headline p {
-      font-size: 4.8rem; } }
-
-@media only screen and (min-width: 1600px) {
-  .cd-headline {
-    font-size: 5.5rem; }
-    .cd-headline p {
-      font-size: 5.8rem; } }
+    font-size: 2.7rem; }
+    @media screen and (min-width: 768px) {
+      .cd-headline p {
+        font-size: 3.7rem; } }
+    @media screen and (min-width: 992px) {
+      .cd-headline p {
+        font-size: 4.8rem; } }
+    @media screen and (min-width: 1400px) {
+      .cd-headline p {
+        font-size: 5.8rem; } }
 
 .cd-words-wrapper {
   display: inline-block;
@@ -1187,7 +1187,11 @@ xclip
   background-size: cover; }
   @media screen and (min-width: 768px) {
     #developmentSection:after {
-      background: url("../images/computer.jpg") no-repeat center fixed; } }
+      background: url("../images/computer.jpg") no-repeat center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
 
 .development-container {
   padding: 0 0 100px 0;
@@ -1414,7 +1418,7 @@ Slider
   background: rgba(0, 0, 0, 0.2);
   padding: 1em 1.6em;
   margin-top: 1em;
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: #ffffff;
   border-radius: 50em;
   -webkit-transition: background 0.3s;
@@ -1434,14 +1438,14 @@ Slider
   background-color: #73a1bf; }
 
 .cd-slider h3 {
-  font-size: 2.2rem;
+  font-size: 3rem;
   margin-bottom: .4em; }
 
 .cd-slider p {
-  font-size: 1.4rem; }
+  font-size: 2rem; }
 
 .cd-slider h2, .cd-slider p {
-  line-height: 1.4; }
+  line-height: 1.8; }
 
 @media only screen and (min-width: 900px) {
   .cd-slider li {
@@ -1506,10 +1510,10 @@ Slider
     display: table-cell;
     vertical-align: middle; }
   .cd-slider .btn {
-    padding: 1.4em 2em;
-    font-size: 1.4rem; }
+    padding: 1em 2em;
+    font-size: 2rem; }
   .cd-slider p {
-    font-size: 1.6rem; }
+    font-size: 2rem; }
   .cd-slider h3 {
     font-size: 3.5rem;
     margin-bottom: 0; }
@@ -1553,7 +1557,7 @@ Slider Navigation
   width: 20px;
   border-radius: 50%;
   color: transparent;
-  /* image replacement */
+  font-size: 18px;
   white-space: nowrap;
   text-indent: 100%;
   overflow: hidden;
@@ -1596,8 +1600,8 @@ Slider Navigation
     color: #f3b96c; } }
 
 #contactSection {
-  min-height: 80vh;
-  height: auto;
+  min-height: 500px;
+  height: 80vh;
   background: url("../images/ContactMin.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1607,7 +1611,8 @@ Slider Navigation
     #contactSection {
       background: url("../images/Contact.jpg") no-repeat center center fixed; } }
   #contactSection #contact {
-    height: inherit; }
+    height: inherit;
+    position: relative; }
     #contactSection #contact h2 {
       font-family: "Raleway", sans-serif;
       text-transform: uppercase;
@@ -1644,28 +1649,32 @@ Slider Navigation
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
         transform: translateX(-50%); }
-    #contactSection #contact .row {
-      z-index: 1; }
     #contactSection #contact .contactList {
       text-align: center;
       list-style: none;
       color: black;
       padding: 20px 0 50px 0;
-      margin: 0; }
-      @media screen and (min-width: 768px) {
-        #contactSection #contact .contactList {
-          padding: 50px 0; } }
+      margin: 0;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 100%; }
       #contactSection #contact .contactList li {
         padding-bottom: 20px; }
         @media screen and (min-width: 768px) {
           #contactSection #contact .contactList li {
             display: inline-block;
-            width: 30%; } }
+            width: 33%; } }
         #contactSection #contact .contactList li i, #contactSection #contact .contactList li p:first-of-type {
-          font-size: 26px; }
+          font-size: 30px; }
           @media screen and (min-width: 768px) {
             #contactSection #contact .contactList li i, #contactSection #contact .contactList li p:first-of-type {
-              font-size: 28px; } }
+              font-size: 34px; } }
         #contactSection #contact .contactList li p:first-of-type {
           padding-top: 10px;
           font-family: "Josefin Sans", Arial, sans-serif; }

@@ -1,7 +1,7 @@
 
 #contactSection {
-  min-height: 80vh;
-  height: auto;
+  min-height: 500px;
+  height: 80vh;
   background: url('../images/ContactMin.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -14,13 +14,9 @@
 
   #contact {
     height: inherit;
-
+    position: relative;
     h2 {
       @include header2();
-    }
-
-    .row {
-      z-index: 1;
     }
 
     .contactList {
@@ -29,21 +25,26 @@
       color: black;
       padding: 20px 0 50px 0  ;
       margin: 0;
-      @include medium{
-        padding: 50px 0;
-
-      }
+      position: absolute;
+      top:60%;
+      left:50%;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      width:100%;
       li {
         padding-bottom: 20px;
         @include medium {
           display: inline-block;
-          width: 30%;
+          width: 33%;
         }
 
         i, p:first-of-type{
-          font-size: 26px;
+          font-size: 30px;
           @include medium{
-            font-size: 28px;
+            font-size: 34px;
           }
         }
         p:first-of-type{
@@ -59,6 +60,7 @@
             font-size: 20px;
           }
         }
+        
         hr{
           width: 20%;
           background-color: $main-color;

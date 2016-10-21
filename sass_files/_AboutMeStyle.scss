@@ -1,13 +1,15 @@
 
 .aboutSection {
   height: auto;
-  min-height:100%;
-  padding: 50px 5%;
+  min-height: 100%;
+  padding: 50px 5px;
   background-color: #404044;
-}
 
-@media screen and (min-width: 1400px) {
-  .aboutSection {
+  @include small {
+    padding: 50px 5%;
+  }
+
+  @include xxlarge {
     padding: 80px 10%;
   }
 }
@@ -195,53 +197,41 @@ Primary style
 
 .cd-intro {
   margin: 4em auto;
-}
-
-@media only screen and (min-width: 768px) {
-  .cd-intro {
+  @include medium {
     margin: 5em auto;
   }
-}
-
-@media only screen and (min-width: 1170px) {
-  .cd-intro {
+  @include xlarge {
     margin: 6em auto;
   }
 }
 
 .cd-headline {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   color: #fff;
-  p{
-    font-size:3.1rem;
-  }
-}
 
-@media only screen and (min-width: 768px) {
-  .cd-headline {
+  @include medium {
     font-size: 3.5rem;
     font-weight: 300;
-    p{
-      font-size:3.7rem;
-    }
   }
-}
 
-@media only screen and (min-width: 1170px) {
-  .cd-headline {
+  @include large {
     font-size: 4.5rem;
-    p{
+  }
+  @include xxlarge {
+    font-size: 5.5rem;
+  }
+
+  p {
+    font-size: 2.7rem;
+    @include medium {
+      font-size: 3.7rem;
+    }
+    @include large {
       font-size: 4.8rem;
     }
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .cd-headline {
-    font-size: 5.5rem;
-    p{
-      font-size:5.8rem;
+    @include xxlarge {
+      font-size: 5.8rem;
     }
   }
 }
@@ -262,7 +252,7 @@ Primary style
 
 .cd-words-wrapper b.is-visible {
   position: relative;
-  font-weight:600;
+  font-weight: 600;
 }
 
 .no-js .cd-words-wrapper b {

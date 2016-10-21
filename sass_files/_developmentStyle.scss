@@ -23,6 +23,10 @@
   background-size: cover;
   @include medium {
     background: url('../images/computer.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 
